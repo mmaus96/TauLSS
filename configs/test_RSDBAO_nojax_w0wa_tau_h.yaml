@@ -22,4 +22,4 @@ params: !defaults
 
 sampler: !defaults [./likelihoods_theories/mcmc]
 timing: True
-output: ../chains/test_RSDBAO_nojax_w0wa_tau_h
+output: ./chains/test_RSDBAO_nojax_w0wa_tau_h/chain
