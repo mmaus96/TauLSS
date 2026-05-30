@@ -14,6 +14,7 @@ url2=ACT_dr6_likelihood_v1.2.tgz
 # Fetch the data and unpack it.
 cd $SCRATCH/Cobaya
 mkdir -p act_dr6_lenslike/data
+cd $SCRATCH/Cobaya/act_dr6_lenslike/data
 wget ${url1}/${url2}
 tar -zxvf ${url2}
 rm ${url2}

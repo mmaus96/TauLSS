@@ -1,0 +1,96 @@
+# BGS
+bsig8_BGS:
+  prior:
+    dist: uniform
+    min:  0.5
+    max:  3.0
+  ref:
+    dist:  norm
+    loc:   1.13
+    scale: 0.05
+  latex: (1+b_1^{BGS})\sigma_8
+b2sig8_BGS:
+  prior:
+  # dist: uniform
+  # min:  -5.0
+  # max:  5.0
+    dist:  norm
+    loc:   0.0
+    scale: 5
+  ref:
+    dist:  norm
+    loc:   -0.1
+    scale: 0.5
+  latex: b_2\sigma_8^{BGS}
+bssig8_BGS:
+# value: 0.0
+  prior:
+  # dist: uniform
+  # min:  -5.0
+  # max:  5.0
+    dist:  norm
+    loc:   0.0
+    scale: 5
+  ref:
+    dist:  norm
+    loc:   0.04
+    scale: 0.5
+  latex: b_s\sigma_8^{BGS}
+b3sig8_BGS:
+  value: 0.0
+  latex: b_3\sigma_8^{BGS}
+
+# BAO
+B1_BGS:
+    prior:
+      dist: uniform
+      min: 0.0
+      max: 5.0
+    ref:
+      dist: norm
+      loc: 1.12
+      scale: 0.1
+    latex: B_1^{BGS}
+F_BGS:
+    prior:
+      dist: uniform
+      min: 0.0
+      max: 5.0
+    ref:
+      dist: norm
+      loc: 0.63
+      scale: 0.1
+    latex: F^{BGS}
+Sigpar_BGS:
+    # value: 0.0
+    prior:
+      dist: norm
+      loc: 0.0
+      scale: 2.0
+    ref:
+      dist: norm
+      loc: 0.0
+      scale: 0.1
+    latex: \Sigma_{\parallel}^{BGS}   
+Sigperp_BGS:
+    # value: 0.0
+    prior:
+      dist: norm
+      loc: 0.0
+      scale: 1.0
+    ref:
+      dist: norm
+      loc: 0.0
+      scale: 0.1
+    latex: \Sigma_{\perp}^{BGS}
+Sigs_BGS:
+    # value: 0.0
+    prior:
+      dist: norm
+      loc: 2.0
+      scale: 2.0
+    ref:
+      dist: norm
+      loc: 2.0
+      scale: 0.1
+    latex: \Sigma_{s}^{BGS}

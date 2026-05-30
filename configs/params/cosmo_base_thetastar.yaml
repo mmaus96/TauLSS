@@ -1,0 +1,70 @@
+omega_b:
+    prior: 
+      min: 0.017
+      max: 0.027
+    ref: 
+      dist: norm
+      loc: 2.237e-2
+      scale: 3e-4
+    proposal: 1.5e-4
+    latex: \Omega_bh^2
+omega_cdm:
+    prior:
+      min: 0.08
+      max: 0.16
+    ref:
+      dist: norm
+      loc: 0.12
+      scale: 0.05
+    latex: \Omega_\mathrm{cdm}h^2
+logA:
+    # value: 3.0363942552728806
+    prior:
+      dist: uniform
+      min:  2.03
+      max:  4.03
+      # min:  1.61
+      # max:  3.91
+    ref:
+      dist:  norm
+      loc:   3.03694
+      scale: 0.05
+    latex: \log(10^{10} A_\mathrm{s})
+
+theta_s_100: 
+    # value: 1.0411
+    prior: 
+      min: 1.038
+      max: 1.044
+    ref: 
+      dist: norm
+      loc: 1.0411
+      scale: 6.2e-4
+    # latex: 100\theta_\mathrm{s}
+ns:
+    prior:
+      dist: norm
+      loc: 0.9649
+      scale: 0.042
+    ref:
+      dist: norm
+      loc: 0.965
+      scale: 0.001
+    latex: n_s
+# 100*theta_s:
+#     value: 'lambda theta_s_100: theta_s_100'
+#     derived: False
+#     latex: 100\theta_\mathrm{s}
+As:
+    value: 'lambda logA: 1e-10*np.exp(logA)'
+    latex: A_\mathrm{s}
+H0:
+    latex: H_0
+h:
+    latex: h
+rs_drag:
+    latex: r_\mathrm{drag}
+sigma8:
+    latex: \sigma_8
+omegam:
+    latex: \Omega_\mathrm{m}

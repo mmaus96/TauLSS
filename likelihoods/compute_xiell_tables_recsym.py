@@ -127,12 +127,11 @@ def compute_xiell_tables(pars,ki,pi,qbao,f0, z=0.51, R=15., rmin=50, rmax=160, d
 
     j0 = spherical_jn(0,ki*qbao)
     Sk = np.exp(-0.5*(ki*R)**2)
-
-    sigmads_dd = simps( 2./3 * pi * (1-Sk)**2, x = ki) / (2*np.pi**2)
+    sigmadd = simps( 2./3 * pi * (1-Sk)**2 * (1-j0), x = ki) / (2*np.pi**2)
     # sigmads_ss = simps( 2./3 * pi * (-Sk)**2, x = ki) / (2*np.pi**2)
     # sigmads_ds = -simps( 2./3 * pi * (1-Sk)*(-Sk)*j0, x = ki) / (2*np.pi**2) # this minus sign is because we subtract the cross term
 
-    sigmas = (sigmads_dd, sigs[0], sigs[1], sigs[2])
+    sigmas = (sigmadd, sigs[0], sigs[1], sigs[2])
     
     # Now make the multipoles!
     klin, plin = ki, pi

@@ -1,0 +1,18 @@
+w:
+    prior:
+      min: -2.0
+      max: -0.1
+    ref:
+      dist: norm
+      loc: -1.0
+      scale: 0.5
+    latex: w_0
+wa:
+    prior:
+      min: -3.0
+      max: 0.5
+    ref:
+      dist: norm
+      loc: 0.0
+      scale: 0.5
+    latex: w_{a}

@@ -1,0 +1,649 @@
+Fri May 22 12:19:03 AM PDT 2026
+Setup done.  Starting to run code ...
+[0 : output] Output to be read-from/written-into folder 'chains/RSDBAO', with prefix 'chain'
+[0 : classy] `classy` module loaded successfully from /global/u2/m/mmaus/.conda/envs/cobaya_tau/lib/python3.13/site-packages/classy
+No hexadecapole data found
+No hexadecapole data found
+No hexadecapole data found
+No hexadecapole data found
+No hexadecapole data found
+No hexadecapole data found
+[0 : mcmc] Getting initial point... (this may take a few seconds)
+[0 : prior] Reference values or pdfs for some parameters were not provided. Sampling from the prior instead for those parameters.
+No hexadecapole data found
+No hexadecapole data found
+No hexadecapole data found
+No hexadecapole data found
+No hexadecapole data found
+No hexadecapole data found
+[1 : mcmc] Getting initial point... (this may take a few seconds)
+No hexadecapole data found
+No hexadecapole data found
+No hexadecapole data found
+No hexadecapole data found
+No hexadecapole data found
+No hexadecapole data found
+[2 : mcmc] Getting initial point... (this may take a few seconds)
+No hexadecapole data found
+No hexadecapole data found
+No hexadecapole data found
+No hexadecapole data found
+No hexadecapole data found
+No hexadecapole data found
+[3 : mcmc] Getting initial point... (this may take a few seconds)
+[3 : prior] Reference values or pdfs for some parameters were not provided. Sampling from the prior instead for those parameters.
+No hexadecapole data found
+No hexadecapole data found
+No hexadecapole data found
+No hexadecapole data found
+No hexadecapole data found
+No hexadecapole data found
+[4 : mcmc] Getting initial point... (this may take a few seconds)
+No hexadecapole data found
+No hexadecapole data found
+No hexadecapole data found
+No hexadecapole data found
+No hexadecapole data found
+No hexadecapole data found
+[5 : mcmc] Getting initial point... (this may take a few seconds)
+[5 : prior] Reference values or pdfs for some parameters were not provided. Sampling from the prior instead for those parameters.
+No hexadecapole data found
+No hexadecapole data found
+No hexadecapole data found
+No hexadecapole data found
+No hexadecapole data found
+No hexadecapole data found
+[6 : mcmc] Getting initial point... (this may take a few seconds)
+[6 : prior] Reference values or pdfs for some parameters were not provided. Sampling from the prior instead for those parameters.
+No hexadecapole data found
+No hexadecapole data found
+No hexadecapole data found
+No hexadecapole data found
+No hexadecapole data found
+No hexadecapole data found
+[7 : mcmc] Getting initial point... (this may take a few seconds)
+[7 : prior] Reference values or pdfs for some parameters were not provided. Sampling from the prior instead for those parameters.
+No hexadecapole data found
+No hexadecapole data found
+No hexadecapole data found
+No hexadecapole data found
+No hexadecapole data found
+No hexadecapole data found
+[8 : mcmc] Getting initial point... (this may take a few seconds)
+[8 : prior] Reference values or pdfs for some parameters were not provided. Sampling from the prior instead for those parameters.
+No hexadecapole data found
+No hexadecapole data found
+No hexadecapole data found
+No hexadecapole data found
+No hexadecapole data found
+No hexadecapole data found
+[9 : mcmc] Getting initial point... (this may take a few seconds)
+[9 : prior] Reference values or pdfs for some parameters were not provided. Sampling from the prior instead for those parameters.
+No hexadecapole data found
+No hexadecapole data found
+No hexadecapole data found
+No hexadecapole data found
+No hexadecapole data found
+No hexadecapole data found
+[10 : mcmc] Getting initial point... (this may take a few seconds)
+[10 : prior] Reference values or pdfs for some parameters were not provided. Sampling from the prior instead for those parameters.
+No hexadecapole data found
+No hexadecapole data found
+No hexadecapole data found
+No hexadecapole data found
+No hexadecapole data found
+No hexadecapole data found
+[11 : mcmc] Getting initial point... (this may take a few seconds)
+[11 : prior] Reference values or pdfs for some parameters were not provided. Sampling from the prior instead for those parameters.
+No hexadecapole data found
+No hexadecapole data found
+No hexadecapole data found
+No hexadecapole data found
+No hexadecapole data found
+No hexadecapole data found
+[12 : mcmc] Getting initial point... (this may take a few seconds)
+[12 : prior] Reference values or pdfs for some parameters were not provided. Sampling from the prior instead for those parameters.
+No hexadecapole data found
+No hexadecapole data found
+No hexadecapole data found
+No hexadecapole data found
+No hexadecapole data found
+No hexadecapole data found
+[13 : mcmc] Getting initial point... (this may take a few seconds)
+[13 : prior] Reference values or pdfs for some parameters were not provided. Sampling from the prior instead for those parameters.
+No hexadecapole data found
+No hexadecapole data found
+No hexadecapole data found
+No hexadecapole data found
+No hexadecapole data found
+No hexadecapole data found
+[14 : mcmc] Getting initial point... (this may take a few seconds)
+[14 : prior] Reference values or pdfs for some parameters were not provided. Sampling from the prior instead for those parameters.
+No hexadecapole data found
+No hexadecapole data found
+No hexadecapole data found
+No hexadecapole data found
+No hexadecapole data found
+No hexadecapole data found
+[15 : mcmc] Getting initial point... (this may take a few seconds)
+[15 : prior] Reference values or pdfs for some parameters were not provided. Sampling from the prior instead for those parameters.
+[1 : prior] Reference values or pdfs for some parameters were not provided. Sampling from the prior instead for those parameters.
+[2 : prior] Reference values or pdfs for some parameters were not provided. Sampling from the prior instead for those parameters.
+[4 : prior] Reference values or pdfs for some parameters were not provided. Sampling from the prior instead for those parameters.
+[6 : mcmc] Initial point: w:-1.031831, wa:0.08540221, omega_b:0.0225924, omega_cdm:0.0939017, logA:3.038496, tau:0.05974587, theta_s_100:1.040883, ns:0.9596677, bsig8_BGS:1.138853, b2sig8_BGS:-1.014875, bssig8_BGS:-0.6148082, bsig8_LRG1:1.218325, b2sig8_LRG1:-0.3304508, bssig8_LRG1:0.5258176, bsig8_LRG2:1.227655, b2sig8_LRG2:-0.4267036, bssig8_LRG2:-0.1938301, bsig8_LRG3:1.107106, b2sig8_LRG3:-0.686472, bssig8_LRG3:1.480939, bsig8_ELG:1.743981, b2sig8_ELG:-2.182638, bssig8_ELG:1.055558, bsig8_QSO:1.831268, b2sig8_QSO:-1.989583, bssig8_QSO:1.047745, B1_BGS:1.159848, F_BGS:0.753906, B1_LRG1:1.074266, F_LRG1:0.526753, B1_LRG2:1.266427, F_LRG2:0.6611116, B1_LRG3:1.031421, F_LRG3:0.7596969, B1_ELG:1.118491, F_ELG:0.582494, B1_QSO:1.184409, F_QSO:0.7649621
+[3 : mcmc] Initial point: w:-1.093087, wa:0.1275123, omega_b:0.02170887, omega_cdm:0.1290089, logA:3.027382, tau:0.06785367, theta_s_100:1.041325, ns:0.9692848, bsig8_BGS:1.18314, b2sig8_BGS:-0.4406141, bssig8_BGS:-0.2416254, bsig8_LRG1:1.153925, b2sig8_LRG1:0.8384261, bssig8_LRG1:-0.5092853, bsig8_LRG2:1.201293, b2sig8_LRG2:-0.5645631, bssig8_LRG2:0.0781765, bsig8_LRG3:1.106724, b2sig8_LRG3:-1.253579, bssig8_LRG3:0.3735703, bsig8_ELG:1.841542, b2sig8_ELG:-2.144295, bssig8_ELG:1.064965, bsig8_QSO:1.688355, b2sig8_QSO:-2.236374, bssig8_QSO:1.034359, B1_BGS:1.069001, F_BGS:0.5254949, B1_LRG1:0.9879059, F_LRG1:0.6373334, B1_LRG2:1.16488, F_LRG2:0.7297826, B1_LRG3:1.278513, F_LRG3:0.7168782, B1_ELG:1.243133, F_ELG:0.6742458, B1_QSO:1.032685, F_QSO:0.7363116
+[5 : mcmc] Initial point: w:-0.9729245, wa:-0.07021928, omega_b:0.0226584, omega_cdm:0.119689, logA:2.953057, tau:0.05648574, theta_s_100:1.04237, ns:0.9668626, bsig8_BGS:1.11185, b2sig8_BGS:-0.2926862, bssig8_BGS:-0.06575632, bsig8_LRG1:1.16745, b2sig8_LRG1:-0.694328, bssig8_LRG1:0.9856032, bsig8_LRG2:1.099386, b2sig8_LRG2:-0.1272277, bssig8_LRG2:0.3719442, bsig8_LRG3:1.145482, b2sig8_LRG3:-1.695506, bssig8_LRG3:0.3002748, bsig8_ELG:1.692291, b2sig8_ELG:-2.064137, bssig8_ELG:1.281656, bsig8_QSO:1.709924, b2sig8_QSO:-2.187503, bssig8_QSO:1.05741, B1_BGS:1.341938, F_BGS:0.566271, B1_LRG1:0.9873806, F_LRG1:0.8740874, B1_LRG2:1.192067, F_LRG2:0.7462123, B1_LRG3:0.9056662, F_LRG3:0.6292722, B1_ELG:1.147538, F_ELG:0.6422983, B1_QSO:1.205141, F_QSO:0.4714748
+[15 : mcmc] Initial point: w:-1.026569, wa:0.04105753, omega_b:0.02243988, omega_cdm:0.09147837, logA:3.141191, tau:0.06105209, theta_s_100:1.04118, ns:0.9748336, bsig8_BGS:1.220375, b2sig8_BGS:0.2632234, bssig8_BGS:0.07427468, bsig8_LRG1:1.172847, b2sig8_LRG1:0.05265862, bssig8_LRG1:0.4424013, bsig8_LRG2:1.155831, b2sig8_LRG2:-0.4335521, bssig8_LRG2:0.1998256, bsig8_LRG3:1.170041, b2sig8_LRG3:-0.5554745, bssig8_LRG3:0.6590959, bsig8_ELG:1.749426, b2sig8_ELG:-2.08152, bssig8_ELG:1.226149, bsig8_QSO:1.694489, b2sig8_QSO:-2.255161, bssig8_QSO:1.141248, B1_BGS:1.06771, F_BGS:0.7691762, B1_LRG1:1.147923, F_LRG1:0.6530739, B1_LRG2:1.01252, F_LRG2:0.8075446, B1_LRG3:1.175928, F_LRG3:0.6531917, B1_ELG:1.158377, F_ELG:0.6390024, B1_QSO:1.240199, F_QSO:0.6165249
+[4 : mcmc] Initial point: w:-0.9547558, wa:-0.08112519, omega_b:0.02204288, omega_cdm:0.09584709, logA:3.064029, tau:0.05824715, theta_s_100:1.040903, ns:0.9785985, bsig8_BGS:1.107213, b2sig8_BGS:-0.1873847, bssig8_BGS:0.2539044, bsig8_LRG1:1.200115, b2sig8_LRG1:0.6837329, bssig8_LRG1:-0.4029595, bsig8_LRG2:1.208999, b2sig8_LRG2:-0.9252411, bssig8_LRG2:0.399011, bsig8_LRG3:1.127466, b2sig8_LRG3:-0.9761869, bssig8_LRG3:0.6933031, bsig8_ELG:1.681816, b2sig8_ELG:-2.074556, bssig8_ELG:1.27799, bsig8_QSO:1.759147, b2sig8_QSO:-2.359576, bssig8_QSO:0.8884349, B1_BGS:1.018928, F_BGS:0.5024447, B1_LRG1:1.153841, F_LRG1:0.783277, B1_LRG2:1.185066, F_LRG2:0.5190143, B1_LRG3:1.282171, F_LRG3:0.6627121, B1_ELG:1.240101, F_ELG:0.6712971, B1_QSO:1.226254, F_QSO:0.578426
+[12 : mcmc] Initial point: w:-0.9574433, wa:0.1007319, omega_b:0.02251723, omega_cdm:0.1417343, logA:3.038513, tau:0.04992281, theta_s_100:1.040317, ns:0.9630442, bsig8_BGS:1.106629, b2sig8_BGS:-0.1187537, bssig8_BGS:0.5115379, bsig8_LRG1:1.188342, b2sig8_LRG1:-0.573257, bssig8_LRG1:0.4429614, bsig8_LRG2:1.209354, b2sig8_LRG2:-0.387593, bssig8_LRG2:0.5951502, bsig8_LRG3:1.109389, b2sig8_LRG3:-0.4524177, bssig8_LRG3:0.3849581, bsig8_ELG:1.756969, b2sig8_ELG:-2.115154, bssig8_ELG:1.092834, bsig8_QSO:1.64935, b2sig8_QSO:-2.094511, bssig8_QSO:1.184762, B1_BGS:1.240074, F_BGS:0.7561492, B1_LRG1:1.108098, F_LRG1:0.7204685, B1_LRG2:1.051006, F_LRG2:0.8600162, B1_LRG3:1.099917, F_LRG3:0.6063548, B1_ELG:1.025189, F_ELG:0.5100574, B1_QSO:1.199166, F_QSO:0.6185756
+[7 : mcmc] Initial point: w:-0.9667575, wa:-0.00788707, omega_b:0.02247196, omega_cdm:0.1112337, logA:3.056113, tau:0.05421375, theta_s_100:1.040581, ns:0.9628157, bsig8_BGS:1.177536, b2sig8_BGS:-0.2044415, bssig8_BGS:0.01029558, bsig8_LRG1:1.140087, b2sig8_LRG1:-0.191207, bssig8_LRG1:-0.4564091, bsig8_LRG2:1.225718, b2sig8_LRG2:-1.185328, bssig8_LRG2:1.122893, bsig8_LRG3:1.23415, b2sig8_LRG3:-0.546746, bssig8_LRG3:0.7101812, bsig8_ELG:1.651285, b2sig8_ELG:-2.275219, bssig8_ELG:1.059257, bsig8_QSO:1.679333, b2sig8_QSO:-2.14767, bssig8_QSO:1.319032, B1_BGS:1.327832, F_BGS:0.6631042, B1_LRG1:1.165321, F_LRG1:0.4911785, B1_LRG2:1.08023, F_LRG2:0.6521585, B1_LRG3:1.157122, F_LRG3:0.6059139, B1_ELG:1.021761, F_ELG:0.7160544, B1_QSO:1.296189, F_QSO:0.7817302
+[14 : mcmc] Initial point: w:-1.037015, wa:0.08426558, omega_b:0.02209294, omega_cdm:0.1048468, logA:3.043198, tau:0.06705765, theta_s_100:1.041638, ns:0.9703081, bsig8_BGS:1.124266, b2sig8_BGS:-0.144443, bssig8_BGS:-0.4404414, bsig8_LRG1:1.123554, b2sig8_LRG1:-0.8018301, bssig8_LRG1:0.3430021, bsig8_LRG2:1.214077, b2sig8_LRG2:-0.3724553, bssig8_LRG2:0.07624922, bsig8_LRG3:1.255195, b2sig8_LRG3:-0.08121098, bssig8_LRG3:0.5062098, bsig8_ELG:1.685681, b2sig8_ELG:-2.193167, bssig8_ELG:1.125421, bsig8_QSO:1.688501, b2sig8_QSO:-2.127704, bssig8_QSO:1.051367, B1_BGS:1.096217, F_BGS:0.6711966, B1_LRG1:1.21269, F_LRG1:0.6822754, B1_LRG2:1.088472, F_LRG2:0.7475423, B1_LRG3:1.056911, F_LRG3:0.6009231, B1_ELG:1.153098, F_ELG:0.6001456, B1_QSO:1.050622, F_QSO:0.6235003
+[9 : mcmc] Initial point: w:-1.016509, wa:0.05035355, omega_b:0.02272886, omega_cdm:0.1235916, logA:3.094312, tau:0.06082435, theta_s_100:1.040459, ns:0.9616226, bsig8_BGS:1.130759, b2sig8_BGS:-0.9327544, bssig8_BGS:-0.01555695, bsig8_LRG1:1.200283, b2sig8_LRG1:0.4914958, bssig8_LRG1:0.8118303, bsig8_LRG2:1.194394, b2sig8_LRG2:-0.2018219, bssig8_LRG2:0.01786827, bsig8_LRG3:1.162738, b2sig8_LRG3:0.01825025, bssig8_LRG3:-0.1987682, bsig8_ELG:1.753182, b2sig8_ELG:-2.331428, bssig8_ELG:1.15484, bsig8_QSO:1.685948, b2sig8_QSO:-2.051331, bssig8_QSO:1.176813, B1_BGS:1.105472, F_BGS:0.6009032, B1_LRG1:1.110987, F_LRG1:0.8057412, B1_LRG2:1.184143, F_LRG2:0.7448239, B1_LRG3:1.105828, F_LRG3:0.7101086, B1_ELG:1.004374, F_ELG:0.6375642, B1_QSO:1.28825, F_QSO:0.5542708
+[1 : mcmc] Initial point: w:-1.029614, wa:-0.1025605, omega_b:0.02254172, omega_cdm:0.1123558, logA:3.00222, tau:0.06429138, theta_s_100:1.040753, ns:0.9682526, bsig8_BGS:1.116254, b2sig8_BGS:0.8672119, bssig8_BGS:0.9163118, bsig8_LRG1:1.103131, b2sig8_LRG1:0.01442987, bssig8_LRG1:0.08740873, bsig8_LRG2:1.14502, b2sig8_LRG2:-0.5886866, bssig8_LRG2:-0.3054265, bsig8_LRG3:1.115504, b2sig8_LRG3:-0.9127881, bssig8_LRG3:0.2629692, bsig8_ELG:1.704773, b2sig8_ELG:-2.098549, bssig8_ELG:1.012026, bsig8_QSO:1.670857, b2sig8_QSO:-2.114439, bssig8_QSO:1.046735, B1_BGS:1.181865, F_BGS:0.6042602, B1_LRG1:1.151276, F_LRG1:0.5743515, B1_LRG2:1.029804, F_LRG2:0.6308348, B1_LRG3:1.227159, F_LRG3:0.6630378, B1_ELG:1.249868, F_ELG:0.5897572, B1_QSO:1.079596, F_QSO:0.743118
+[2 : mcmc] Initial point: w:-1.001579, wa:0.03077562, omega_b:0.02213146, omega_cdm:0.100128, logA:3.079224, tau:0.05501861, theta_s_100:1.041263, ns:0.9757407, bsig8_BGS:1.14621, b2sig8_BGS:-0.460553, bssig8_BGS:-0.7428921, bsig8_LRG1:1.23152, b2sig8_LRG1:0.5639644, bssig8_LRG1:0.1101455, bsig8_LRG2:1.187345, b2sig8_LRG2:-0.5363078, bssig8_LRG2:1.060608, bsig8_LRG3:1.08805, b2sig8_LRG3:-0.7492964, bssig8_LRG3:-0.5067239, bsig8_ELG:1.73624, b2sig8_ELG:-2.234414, bssig8_ELG:1.157034, bsig8_QSO:1.690933, b2sig8_QSO:-2.111382, bssig8_QSO:1.048371, B1_BGS:1.102323, F_BGS:0.6863883, B1_LRG1:1.084143, F_LRG1:0.5639893, B1_LRG2:1.15565, F_LRG2:0.6442055, B1_LRG3:1.247522, F_LRG3:0.8030941, B1_ELG:1.108463, F_ELG:0.7139989, B1_QSO:1.178106, F_QSO:0.6455313
+[10 : mcmc] Initial point: w:-0.9650434, wa:0.04329802, omega_b:0.0224546, omega_cdm:0.1236317, logA:3.024836, tau:0.07286745, theta_s_100:1.04134, ns:0.9603247, bsig8_BGS:1.080276, b2sig8_BGS:-1.080395, bssig8_BGS:-0.1147466, bsig8_LRG1:1.10828, b2sig8_LRG1:-0.01502469, bssig8_LRG1:0.2588233, bsig8_LRG2:1.153119, b2sig8_LRG2:-0.3368282, bssig8_LRG2:-0.173153, bsig8_LRG3:1.085332, b2sig8_LRG3:0.2754774, bssig8_LRG3:0.3750863, bsig8_ELG:1.748483, b2sig8_ELG:-2.354696, bssig8_ELG:1.239451, bsig8_QSO:1.614092, b2sig8_QSO:-2.038145, bssig8_QSO:1.040772, B1_BGS:1.025657, F_BGS:0.7304824, B1_LRG1:1.157012, F_LRG1:0.674808, B1_LRG2:1.299524, F_LRG2:0.7743696, B1_LRG3:1.106365, F_LRG3:0.5062317, B1_ELG:1.172092, F_ELG:0.5595506, B1_QSO:1.19413, F_QSO:0.6514431
+[8 : mcmc] Initial point: w:-1.024304, wa:-0.03963365, omega_b:0.02229979, omega_cdm:0.1367322, logA:3.038422, tau:0.05925578, theta_s_100:1.040601, ns:0.955264, bsig8_BGS:1.122078, b2sig8_BGS:0.8459443, bssig8_BGS:-0.08540872, bsig8_LRG1:1.135363, b2sig8_LRG1:-0.2780635, bssig8_LRG1:0.01933115, bsig8_LRG2:1.164716, b2sig8_LRG2:-0.6771548, bssig8_LRG2:0.7213922, bsig8_LRG3:1.018093, b2sig8_LRG3:-0.6279774, bssig8_LRG3:0.2607593, bsig8_ELG:1.655914, b2sig8_ELG:-2.04298, bssig8_ELG:1.150392, bsig8_QSO:1.706338, b2sig8_QSO:-2.160109, bssig8_QSO:1.158997, B1_BGS:1.013487, F_BGS:0.5282999, B1_LRG1:1.304614, F_LRG1:0.5278698, B1_LRG2:0.8988663, F_LRG2:0.6068251, B1_LRG3:1.063252, F_LRG3:0.4980286, B1_ELG:1.251573, F_ELG:0.5155726, B1_QSO:0.9519436, F_QSO:0.5332521
+[11 : mcmc] Initial point: w:-0.9363517, wa:-0.06495509, omega_b:0.02223463, omega_cdm:0.1467038, logA:3.037069, tau:0.05129694, theta_s_100:1.042362, ns:0.9613312, bsig8_BGS:1.117196, b2sig8_BGS:-0.1600227, bssig8_BGS:-0.7018126, bsig8_LRG1:1.217111, b2sig8_LRG1:-0.2495076, bssig8_LRG1:0.06431208, bsig8_LRG2:1.049643, b2sig8_LRG2:-0.1753263, bssig8_LRG2:0.02542768, bsig8_LRG3:1.07795, b2sig8_LRG3:-0.6905632, bssig8_LRG3:0.665027, bsig8_ELG:1.757373, b2sig8_ELG:-2.164658, bssig8_ELG:1.154553, bsig8_QSO:1.772054, b2sig8_QSO:-2.199729, bssig8_QSO:0.890108, B1_BGS:1.095243, F_BGS:0.6181289, B1_LRG1:1.253113, F_LRG1:0.7931607, B1_LRG2:1.131136, F_LRG2:0.8107592, B1_LRG3:1.176861, F_LRG3:0.7889055, B1_ELG:1.210059, F_ELG:0.6734976, B1_QSO:1.158489, F_QSO:0.5906009
+[13 : mcmc] Initial point: w:-0.997438, wa:0.06615527, omega_b:0.02287553, omega_cdm:0.1550937, logA:3.034364, tau:0.06527495, theta_s_100:1.041045, ns:0.9550889, bsig8_BGS:1.220263, b2sig8_BGS:0.812113, bssig8_BGS:-0.4681495, bsig8_LRG1:1.146831, b2sig8_LRG1:-0.1640537, bssig8_LRG1:-0.3539379, bsig8_LRG2:1.138527, b2sig8_LRG2:0.1333318, bssig8_LRG2:0.2857933, bsig8_LRG3:1.162493, b2sig8_LRG3:0.08691023, bssig8_LRG3:0.6354527, bsig8_ELG:1.760082, b2sig8_ELG:-2.128632, bssig8_ELG:0.9676415, bsig8_QSO:1.752683, b2sig8_QSO:-2.227082, bssig8_QSO:1.232783, B1_BGS:1.194754, F_BGS:0.4398705, B1_LRG1:1.22525, F_LRG1:0.6646025, B1_LRG2:1.070164, F_LRG2:0.4848151, B1_LRG3:0.9905468, F_LRG3:0.5724503, B1_ELG:1.105423, F_ELG:0.6141855, B1_QSO:1.154161, F_QSO:0.512619
+[0 : mcmc] Initial point: w:-0.9451662, wa:-0.03033465, omega_b:0.02211251, omega_cdm:0.1575325, logA:3.02029, tau:0.0522071, theta_s_100:1.040168, ns:0.9625357, bsig8_BGS:1.173671, b2sig8_BGS:0.3457424, bssig8_BGS:-0.4394787, bsig8_LRG1:1.114884, b2sig8_LRG1:0.2496804, bssig8_LRG1:0.02938263, bsig8_LRG2:1.159842, b2sig8_LRG2:-0.4194444, bssig8_LRG2:0.6844588, bsig8_LRG3:1.150281, b2sig8_LRG3:-0.9713252, bssig8_LRG3:0.7381039, bsig8_ELG:1.722753, b2sig8_ELG:-2.209146, bssig8_ELG:1.046208, bsig8_QSO:1.708482, b2sig8_QSO:-2.209203, bssig8_QSO:1.206701, B1_BGS:1.118392, F_BGS:0.8241569, B1_LRG1:0.9493704, F_LRG1:0.6208207, B1_LRG2:1.116814, F_LRG2:0.6532408, B1_LRG3:1.08277, F_LRG3:0.7306254, B1_ELG:1.084996, F_ELG:0.7420338, B1_QSO:1.019534, F_QSO:0.5205052
+[0 : mcmc] Oversampling with factors:
+[0 : mcmc] * 1 : ['w', 'wa', 'omega_b', 'omega_cdm', 'logA', 'tau', 'ns', 'theta_s_100']
+[0 : mcmc] * 2 : ['bsig8_BGS', 'b2sig8_BGS', 'bssig8_BGS', 'bsig8_LRG1', 'b2sig8_LRG1', 'bssig8_LRG1', 'bsig8_LRG2', 'b2sig8_LRG2', 'bssig8_LRG2', 'bsig8_LRG3', 'b2sig8_LRG3', 'bssig8_LRG3', 'bsig8_ELG', 'b2sig8_ELG', 'bssig8_ELG', 'bsig8_QSO', 'b2sig8_QSO', 'bssig8_QSO']
+[0 : mcmc] * 6 : ['B1_BGS', 'F_BGS', 'B1_LRG1', 'F_LRG1', 'B1_LRG2', 'F_LRG2', 'B1_LRG3', 'F_LRG3', 'B1_ELG', 'F_ELG', 'B1_QSO', 'F_QSO']
+[0 : prior] *WARNING* Reference pdf not defined or improper for some parameters. Using prior's sigma instead for them.
+[0 : mcmc] Covariance matrix not present. We will start learning the covariance of the proposal earlier: R-1 = 30 (would be 30 if all params loaded).
+[0 : mcmc] Sampling!
+[13 : mcmc] Progress @ 2026-05-22 00:20:16 : 1 steps taken, and 0 accepted.
+[4 : mcmc] Progress @ 2026-05-22 00:20:16 : 1 steps taken, and 0 accepted.
+[12 : mcmc] Progress @ 2026-05-22 00:20:16 : 1 steps taken, and 0 accepted.
+[6 : mcmc] Progress @ 2026-05-22 00:20:16 : 1 steps taken, and 0 accepted.
+[14 : mcmc] Progress @ 2026-05-22 00:20:16 : 1 steps taken, and 0 accepted.
+[15 : mcmc] Progress @ 2026-05-22 00:20:16 : 1 steps taken, and 0 accepted.
+[7 : mcmc] Progress @ 2026-05-22 00:20:16 : 1 steps taken, and 0 accepted.
+[1 : mcmc] Progress @ 2026-05-22 00:20:16 : 1 steps taken, and 0 accepted.
+[9 : mcmc] Progress @ 2026-05-22 00:20:16 : 1 steps taken, and 0 accepted.
+[3 : mcmc] Progress @ 2026-05-22 00:20:16 : 1 steps taken, and 0 accepted.
+[2 : mcmc] Progress @ 2026-05-22 00:20:16 : 1 steps taken, and 0 accepted.
+[10 : mcmc] Progress @ 2026-05-22 00:20:16 : 1 steps taken, and 0 accepted.
+[8 : mcmc] Progress @ 2026-05-22 00:20:16 : 1 steps taken, and 0 accepted.
+[11 : mcmc] Progress @ 2026-05-22 00:20:16 : 1 steps taken, and 0 accepted.
+[0 : mcmc] Progress @ 2026-05-22 00:20:16 : 1 steps taken, and 0 accepted.
+[5 : mcmc] Progress @ 2026-05-22 00:20:28 : 1 steps taken, and 0 accepted.
+[4 : mcmc] Progress @ 2026-05-22 00:21:16 : 39 steps taken, and 9 accepted.
+[10 : mcmc] Progress @ 2026-05-22 00:21:17 : 65 steps taken, and 20 accepted.
+[1 : mcmc] Progress @ 2026-05-22 00:21:17 : 36 steps taken, and 8 accepted.
+[14 : mcmc] Progress @ 2026-05-22 00:21:17 : 28 steps taken, and 6 accepted.
+[6 : mcmc] Progress @ 2026-05-22 00:21:17 : 43 steps taken, and 11 accepted.
+[9 : mcmc] Progress @ 2026-05-22 00:21:19 : 41 steps taken, and 13 accepted.
+[13 : mcmc] Progress @ 2026-05-22 00:21:20 : 107 steps taken, and 32 accepted.
+[2 : mcmc] Progress @ 2026-05-22 00:21:20 : 27 steps taken, and 8 accepted.
+[15 : mcmc] Progress @ 2026-05-22 00:21:20 : 67 steps taken, and 20 accepted.
+[11 : mcmc] Progress @ 2026-05-22 00:21:22 : 72 steps taken, and 23 accepted.
+[3 : mcmc] Progress @ 2026-05-22 00:21:22 : 49 steps taken, and 14 accepted.
+[7 : mcmc] Progress @ 2026-05-22 00:21:23 : 52 steps taken, and 16 accepted.
+[8 : mcmc] Progress @ 2026-05-22 00:21:24 : 97 steps taken, and 29 accepted.
+[12 : mcmc] Progress @ 2026-05-22 00:21:25 : 71 steps taken, and 21 accepted.
+[0 : mcmc] Progress @ 2026-05-22 00:21:27 : 88 steps taken, and 28 accepted.
+[5 : mcmc] Progress @ 2026-05-22 00:21:28 : 23 steps taken, and 6 accepted.
+[6 : mcmc] Progress @ 2026-05-22 00:22:18 : 141 steps taken, and 41 accepted.
+[4 : mcmc] Progress @ 2026-05-22 00:22:19 : 166 steps taken, and 48 accepted.
+[9 : mcmc] Progress @ 2026-05-22 00:22:20 : 135 steps taken, and 42 accepted.
+[1 : mcmc] Progress @ 2026-05-22 00:22:21 : 218 steps taken, and 64 accepted.
+[15 : mcmc] Progress @ 2026-05-22 00:22:21 : 160 steps taken, and 46 accepted.
+[14 : mcmc] Progress @ 2026-05-22 00:22:23 : 181 steps taken, and 55 accepted.
+[2 : mcmc] Progress @ 2026-05-22 00:22:24 : 153 steps taken, and 49 accepted.
+[7 : mcmc] Progress @ 2026-05-22 00:22:25 : 159 steps taken, and 50 accepted.
+[10 : mcmc] Progress @ 2026-05-22 00:22:26 : 176 steps taken, and 54 accepted.
+[13 : mcmc] Progress @ 2026-05-22 00:22:27 : 300 steps taken, and 93 accepted.
+[3 : mcmc] Progress @ 2026-05-22 00:22:27 : 167 steps taken, and 53 accepted.
+[5 : mcmc] Progress @ 2026-05-22 00:22:28 : 185 steps taken, and 59 accepted.
+[11 : mcmc] Progress @ 2026-05-22 00:22:29 : 212 steps taken, and 68 accepted.
+[8 : mcmc] Progress @ 2026-05-22 00:22:29 : 308 steps taken, and 98 accepted.
+[12 : mcmc] Progress @ 2026-05-22 00:22:29 : 181 steps taken, and 56 accepted.
+[0 : mcmc] Progress @ 2026-05-22 00:22:30 : 166 steps taken, and 54 accepted.
+[9 : mcmc] Progress @ 2026-05-22 00:23:21 : 384 steps taken, and 117 accepted.
+[4 : mcmc] Progress @ 2026-05-22 00:23:21 : 477 steps taken, and 147 accepted.
+[15 : mcmc] Progress @ 2026-05-22 00:23:21 : 367 steps taken, and 114 accepted.
+[6 : mcmc] Progress @ 2026-05-22 00:23:21 : 389 steps taken, and 122 accepted.
+[1 : mcmc] Progress @ 2026-05-22 00:23:22 : 552 steps taken, and 173 accepted.
+[14 : mcmc] Progress @ 2026-05-22 00:23:23 : 535 steps taken, and 169 accepted.
+[2 : mcmc] Progress @ 2026-05-22 00:23:26 : 421 steps taken, and 135 accepted.
+[10 : mcmc] Progress @ 2026-05-22 00:23:27 : 501 steps taken, and 160 accepted.
+[7 : mcmc] Progress @ 2026-05-22 00:23:27 : 492 steps taken, and 158 accepted.
+[13 : mcmc] Progress @ 2026-05-22 00:23:28 : 616 steps taken, and 196 accepted.
+[0 : mcmc] Progress @ 2026-05-22 00:23:30 : 465 steps taken, and 149 accepted.
+[11 : mcmc] Progress @ 2026-05-22 00:23:31 : 545 steps taken, and 176 accepted.
+[3 : mcmc] Progress @ 2026-05-22 00:23:32 : 424 steps taken, and 139 accepted.
+[5 : mcmc] Progress @ 2026-05-22 00:23:33 : 541 steps taken, and 177 accepted.
+[8 : mcmc] Progress @ 2026-05-22 00:23:33 : 598 steps taken, and 192 accepted.
+[12 : mcmc] Progress @ 2026-05-22 00:23:33 : 521 steps taken, and 167 accepted.
+[4 : mcmc] Progress @ 2026-05-22 00:24:21 : 750 steps taken, and 234 accepted.
+[6 : mcmc] Progress @ 2026-05-22 00:24:22 : 707 steps taken, and 221 accepted.
+[15 : mcmc] Progress @ 2026-05-22 00:24:23 : 701 steps taken, and 223 accepted.
+[9 : mcmc] Progress @ 2026-05-22 00:24:23 : 652 steps taken, and 203 accepted.
+[14 : mcmc] Progress @ 2026-05-22 00:24:24 : 844 steps taken, and 268 accepted.
+[1 : mcmc] Progress @ 2026-05-22 00:24:24 : 754 steps taken, and 238 accepted.
+[2 : mcmc] Progress @ 2026-05-22 00:24:26 : 712 steps taken, and 229 accepted.
+[7 : mcmc] Progress @ 2026-05-22 00:24:29 : 809 steps taken, and 262 accepted.
+[13 : mcmc] Progress @ 2026-05-22 00:24:29 : 873 steps taken, and 282 accepted.
+[10 : mcmc] Progress @ 2026-05-22 00:24:29 : 810 steps taken, and 258 accepted.
+[0 : mcmc] Progress @ 2026-05-22 00:24:30 : 786 steps taken, and 254 accepted.
+[5 : mcmc] Progress @ 2026-05-22 00:24:34 : 818 steps taken, and 266 accepted.
+[3 : mcmc] Progress @ 2026-05-22 00:24:34 : 741 steps taken, and 238 accepted.
+[11 : mcmc] Progress @ 2026-05-22 00:24:34 : 849 steps taken, and 277 accepted.
+[12 : mcmc] Progress @ 2026-05-22 00:24:35 : 816 steps taken, and 261 accepted.
+[8 : mcmc] Progress @ 2026-05-22 00:24:35 : 891 steps taken, and 285 accepted.
+[4 : mcmc] Progress @ 2026-05-22 00:25:22 : 1040 steps taken, and 328 accepted.
+[15 : mcmc] Progress @ 2026-05-22 00:25:24 : 1005 steps taken, and 325 accepted.
+[6 : mcmc] Progress @ 2026-05-22 00:25:24 : 1003 steps taken, and 312 accepted.
+[1 : mcmc] Progress @ 2026-05-22 00:25:25 : 1077 steps taken, and 342 accepted.
+[9 : mcmc] Progress @ 2026-05-22 00:25:25 : 1029 steps taken, and 325 accepted.
+[14 : mcmc] Progress @ 2026-05-22 00:25:25 : 1111 steps taken, and 356 accepted.
+[2 : mcmc] Progress @ 2026-05-22 00:25:28 : 981 steps taken, and 317 accepted.
+[7 : mcmc] Progress @ 2026-05-22 00:25:29 : 1081 steps taken, and 348 accepted.
+[13 : mcmc] Progress @ 2026-05-22 00:25:32 : 1162 steps taken, and 375 accepted.
+[10 : mcmc] Progress @ 2026-05-22 00:25:32 : 1112 steps taken, and 353 accepted.
+[0 : mcmc] Progress @ 2026-05-22 00:25:33 : 1085 steps taken, and 351 accepted.
+[11 : mcmc] Progress @ 2026-05-22 00:25:34 : 1129 steps taken, and 367 accepted.
+[5 : mcmc] Progress @ 2026-05-22 00:25:34 : 1158 steps taken, and 376 accepted.
+[3 : mcmc] Progress @ 2026-05-22 00:25:34 : 1040 steps taken, and 335 accepted.
+[12 : mcmc] Progress @ 2026-05-22 00:25:37 : 1116 steps taken, and 355 accepted.
+[8 : mcmc] Progress @ 2026-05-22 00:25:37 : 1196 steps taken, and 384 accepted.
+[4 : mcmc] Progress @ 2026-05-22 00:26:23 : 1277 steps taken, and 402 accepted.
+[1 : mcmc] Progress @ 2026-05-22 00:26:25 : 1334 steps taken, and 424 accepted.
+[15 : mcmc] Progress @ 2026-05-22 00:26:25 : 1203 steps taken, and 389 accepted.
+[6 : mcmc] Progress @ 2026-05-22 00:26:25 : 1249 steps taken, and 390 accepted.
+[14 : mcmc] Progress @ 2026-05-22 00:26:29 : 1391 steps taken, and 442 accepted.
+[7 : mcmc] Progress @ 2026-05-22 00:26:31 : 1331 steps taken, and 430 accepted.
+[9 : mcmc] Progress @ 2026-05-22 00:26:31 : 1317 steps taken, and 416 accepted.
+[2 : mcmc] Progress @ 2026-05-22 00:26:31 : 1221 steps taken, and 393 accepted.
+[12 : mcmc] Progress @ 2026-05-22 00:26:37 : 1364 steps taken, and 432 accepted.
+[8 : mcmc] Progress @ 2026-05-22 00:26:38 : 1414 steps taken, and 453 accepted.
+[13 : mcmc] Progress @ 2026-05-22 00:26:38 : 1423 steps taken, and 460 accepted.
+[3 : mcmc] Progress @ 2026-05-22 00:26:38 : 1289 steps taken, and 413 accepted.
+[0 : mcmc] Progress @ 2026-05-22 00:26:38 : 1370 steps taken, and 444 accepted.
+[5 : mcmc] Progress @ 2026-05-22 00:26:39 : 1384 steps taken, and 450 accepted.
+[10 : mcmc] Progress @ 2026-05-22 00:26:39 : 1364 steps taken, and 433 accepted.
+[11 : mcmc] Progress @ 2026-05-22 00:26:41 : 1387 steps taken, and 449 accepted.
+[4 : mcmc] Progress @ 2026-05-22 00:27:25 : 1455 steps taken, and 455 accepted.
+[1 : mcmc] Progress @ 2026-05-22 00:27:25 : 1508 steps taken, and 479 accepted.
+[15 : mcmc] Progress @ 2026-05-22 00:27:25 : 1435 steps taken, and 466 accepted.
+[6 : mcmc] Progress @ 2026-05-22 00:27:28 : 1415 steps taken, and 442 accepted.
+[2 : mcmc] Progress @ 2026-05-22 00:27:31 : 1402 steps taken, and 453 accepted.
+[9 : mcmc] Progress @ 2026-05-22 00:27:31 : 1484 steps taken, and 471 accepted.
+[14 : mcmc] Progress @ 2026-05-22 00:27:31 : 1580 steps taken, and 502 accepted.
+[7 : mcmc] Progress @ 2026-05-22 00:27:32 : 1509 steps taken, and 488 accepted.
+[12 : mcmc] Progress @ 2026-05-22 00:27:37 : 1540 steps taken, and 488 accepted.
+[8 : mcmc] Progress @ 2026-05-22 00:27:38 : 1625 steps taken, and 519 accepted.
+[3 : mcmc] Progress @ 2026-05-22 00:27:38 : 1486 steps taken, and 474 accepted.
+[0 : mcmc] Progress @ 2026-05-22 00:27:38 : 1589 steps taken, and 517 accepted.
+[5 : mcmc] Progress @ 2026-05-22 00:27:40 : 1555 steps taken, and 506 accepted.
+[10 : mcmc] Progress @ 2026-05-22 00:27:40 : 1569 steps taken, and 500 accepted.
+[13 : mcmc] Progress @ 2026-05-22 00:27:41 : 1630 steps taken, and 529 accepted.
+[11 : mcmc] Progress @ 2026-05-22 00:27:42 : 1596 steps taken, and 514 accepted.
+[4 : mcmc] Progress @ 2026-05-22 00:28:28 : 1723 steps taken, and 542 accepted.
+[6 : mcmc] Progress @ 2026-05-22 00:28:28 : 1680 steps taken, and 526 accepted.
+[1 : mcmc] Progress @ 2026-05-22 00:28:28 : 1780 steps taken, and 567 accepted.
+[15 : mcmc] Progress @ 2026-05-22 00:28:29 : 1718 steps taken, and 556 accepted.
+[14 : mcmc] Progress @ 2026-05-22 00:28:31 : 1858 steps taken, and 592 accepted.
+[7 : mcmc] Progress @ 2026-05-22 00:28:32 : 1760 steps taken, and 567 accepted.
+[9 : mcmc] Progress @ 2026-05-22 00:28:32 : 1749 steps taken, and 555 accepted.
+[2 : mcmc] Progress @ 2026-05-22 00:28:33 : 1696 steps taken, and 550 accepted.
+[8 : mcmc] Progress @ 2026-05-22 00:28:38 : 1858 steps taken, and 592 accepted.
+[0 : mcmc] Progress @ 2026-05-22 00:28:39 : 1852 steps taken, and 602 accepted.
+[3 : mcmc] Progress @ 2026-05-22 00:28:39 : 1763 steps taken, and 565 accepted.
+[12 : mcmc] Progress @ 2026-05-22 00:28:39 : 1836 steps taken, and 582 accepted.
+[10 : mcmc] Progress @ 2026-05-22 00:28:42 : 1848 steps taken, and 591 accepted.
+[5 : mcmc] Progress @ 2026-05-22 00:28:42 : 1858 steps taken, and 607 accepted.
+[13 : mcmc] Progress @ 2026-05-22 00:28:42 : 1893 steps taken, and 611 accepted.
+[11 : mcmc] Progress @ 2026-05-22 00:28:42 : 1829 steps taken, and 589 accepted.
+[15 : mcmc] Progress @ 2026-05-22 00:29:29 : 1861 steps taken, and 601 accepted.
+[1 : mcmc] Progress @ 2026-05-22 00:29:31 : 1952 steps taken, and 621 accepted.
+[14 : mcmc] Progress @ 2026-05-22 00:29:33 : 2013 steps taken, and 639 accepted.
+[6 : mcmc] Progress @ 2026-05-22 00:29:33 : 1883 steps taken, and 590 accepted.
+[4 : mcmc] Progress @ 2026-05-22 00:29:33 : 1912 steps taken, and 603 accepted.
+[9 : mcmc] Progress @ 2026-05-22 00:29:33 : 1935 steps taken, and 611 accepted.
+[7 : mcmc] Progress @ 2026-05-22 00:29:34 : 1953 steps taken, and 630 accepted.
+[2 : mcmc] Progress @ 2026-05-22 00:29:35 : 1899 steps taken, and 616 accepted.
+[0 : mcmc] Progress @ 2026-05-22 00:29:39 : 1989 steps taken, and 647 accepted.
+[8 : mcmc] Progress @ 2026-05-22 00:29:40 : 2058 steps taken, and 657 accepted.
+[3 : mcmc] Progress @ 2026-05-22 00:29:40 : 1942 steps taken, and 621 accepted.
+[10 : mcmc] Progress @ 2026-05-22 00:29:42 : 1998 steps taken, and 638 accepted.
+[12 : mcmc] Progress @ 2026-05-22 00:29:42 : 2057 steps taken, and 654 accepted.
+[5 : mcmc] Progress @ 2026-05-22 00:29:42 : 2008 steps taken, and 654 accepted.
+[13 : mcmc] Progress @ 2026-05-22 00:29:44 : 2072 steps taken, and 671 accepted.
+[11 : mcmc] Progress @ 2026-05-22 00:29:46 : 2014 steps taken, and 647 accepted.
+[15 : mcmc] Progress @ 2026-05-22 00:30:29 : 2174 steps taken, and 701 accepted.
+[1 : mcmc] Progress @ 2026-05-22 00:30:33 : 2257 steps taken, and 719 accepted.
+[9 : mcmc] Progress @ 2026-05-22 00:30:34 : 2151 steps taken, and 681 accepted.
+[4 : mcmc] Progress @ 2026-05-22 00:30:36 : 2156 steps taken, and 680 accepted.
+[6 : mcmc] Progress @ 2026-05-22 00:30:36 : 2123 steps taken, and 665 accepted.
+[14 : mcmc] Progress @ 2026-05-22 00:30:36 : 2283 steps taken, and 728 accepted.
+[2 : mcmc] Progress @ 2026-05-22 00:30:36 : 2157 steps taken, and 696 accepted.
+[7 : mcmc] Progress @ 2026-05-22 00:30:37 : 2214 steps taken, and 715 accepted.
+[3 : mcmc] Progress @ 2026-05-22 00:30:44 : 2160 steps taken, and 694 accepted.
+[13 : mcmc] Progress @ 2026-05-22 00:30:44 : 2314 steps taken, and 747 accepted.
+[12 : mcmc] Progress @ 2026-05-22 00:30:44 : 2280 steps taken, and 723 accepted.
+[0 : mcmc] Progress @ 2026-05-22 00:30:44 : 2289 steps taken, and 743 accepted.
+[5 : mcmc] Progress @ 2026-05-22 00:30:44 : 2260 steps taken, and 735 accepted.
+[8 : mcmc] Progress @ 2026-05-22 00:30:45 : 2317 steps taken, and 738 accepted.
+[10 : mcmc] Progress @ 2026-05-22 00:30:45 : 2271 steps taken, and 728 accepted.
+[11 : mcmc] Progress @ 2026-05-22 00:30:47 : 2258 steps taken, and 723 accepted.
+[15 : mcmc] Progress @ 2026-05-22 00:31:32 : 2364 steps taken, and 758 accepted.
+[1 : mcmc] Progress @ 2026-05-22 00:31:34 : 2438 steps taken, and 777 accepted.
+[9 : mcmc] Progress @ 2026-05-22 00:31:34 : 2382 steps taken, and 749 accepted.
+[2 : mcmc] Progress @ 2026-05-22 00:31:38 : 2338 steps taken, and 753 accepted.
+[14 : mcmc] Progress @ 2026-05-22 00:31:38 : 2466 steps taken, and 787 accepted.
+[6 : mcmc] Progress @ 2026-05-22 00:31:38 : 2337 steps taken, and 733 accepted.
+[7 : mcmc] Progress @ 2026-05-22 00:31:39 : 2431 steps taken, and 781 accepted.
+[4 : mcmc] Progress @ 2026-05-22 00:31:39 : 2396 steps taken, and 758 accepted.
+[3 : mcmc] Progress @ 2026-05-22 00:31:44 : 2349 steps taken, and 757 accepted.
+[13 : mcmc] Progress @ 2026-05-22 00:31:45 : 2526 steps taken, and 816 accepted.
+[0 : mcmc] Progress @ 2026-05-22 00:31:45 : 2487 steps taken, and 806 accepted.
+[12 : mcmc] Progress @ 2026-05-22 00:31:45 : 2529 steps taken, and 806 accepted.
+[8 : mcmc] Progress @ 2026-05-22 00:31:46 : 2540 steps taken, and 809 accepted.
+[5 : mcmc] Progress @ 2026-05-22 00:31:46 : 2513 steps taken, and 818 accepted.
+[10 : mcmc] Progress @ 2026-05-22 00:31:48 : 2521 steps taken, and 808 accepted.
+[11 : mcmc] Progress @ 2026-05-22 00:31:48 : 2496 steps taken, and 803 accepted.
+[1 : mcmc] Progress @ 2026-05-22 00:32:37 : 2668 steps taken, and 853 accepted.
+[15 : mcmc] Progress @ 2026-05-22 00:32:38 : 2582 steps taken, and 827 accepted.
+[2 : mcmc] Progress @ 2026-05-22 00:32:38 : 2566 steps taken, and 827 accepted.
+[14 : mcmc] Progress @ 2026-05-22 00:32:41 : 2705 steps taken, and 862 accepted.
+[7 : mcmc] Progress @ 2026-05-22 00:32:43 : 2614 steps taken, and 838 accepted.
+[6 : mcmc] Progress @ 2026-05-22 00:32:46 : 2537 steps taken, and 796 accepted.
+[4 : mcmc] Progress @ 2026-05-22 00:32:46 : 2586 steps taken, and 820 accepted.
+[3 : mcmc] Progress @ 2026-05-22 00:32:47 : 2569 steps taken, and 830 accepted.
+[13 : mcmc] Progress @ 2026-05-22 00:32:48 : 2701 steps taken, and 871 accepted.
+[9 : mcmc] Progress @ 2026-05-22 00:32:49 : 2635 steps taken, and 833 accepted.
+[5 : mcmc] Progress @ 2026-05-22 00:32:52 : 2676 steps taken, and 869 accepted.
+[8 : mcmc] Progress @ 2026-05-22 00:32:53 : 2720 steps taken, and 868 accepted.
+[12 : mcmc] Progress @ 2026-05-22 00:32:54 : 2698 steps taken, and 860 accepted.
+[0 : mcmc] Progress @ 2026-05-22 00:32:54 : 2674 steps taken, and 866 accepted.
+[11 : mcmc] Progress @ 2026-05-22 00:32:57 : 2649 steps taken, and 851 accepted.
+[10 : mcmc] Progress @ 2026-05-22 00:32:58 : 2759 steps taken, and 885 accepted.
+[1 : mcmc] Progress @ 2026-05-22 00:33:39 : 2862 steps taken, and 918 accepted.
+[2 : mcmc] Progress @ 2026-05-22 00:33:39 : 2737 steps taken, and 883 accepted.
+[15 : mcmc] Progress @ 2026-05-22 00:33:39 : 2798 steps taken, and 895 accepted.
+[14 : mcmc] Progress @ 2026-05-22 00:33:42 : 2866 steps taken, and 914 accepted.
+[7 : mcmc] Progress @ 2026-05-22 00:33:44 : 2878 steps taken, and 926 accepted.
+[6 : mcmc] Progress @ 2026-05-22 00:33:46 : 2778 steps taken, and 877 accepted.
+[4 : mcmc] Progress @ 2026-05-22 00:33:47 : 2831 steps taken, and 896 accepted.
+[3 : mcmc] Progress @ 2026-05-22 00:33:49 : 2801 steps taken, and 903 accepted.
+[13 : mcmc] Progress @ 2026-05-22 00:33:50 : 2937 steps taken, and 942 accepted.
+[9 : mcmc] Progress @ 2026-05-22 00:33:50 : 2872 steps taken, and 909 accepted.
+[5 : mcmc] Progress @ 2026-05-22 00:33:53 : 2921 steps taken, and 944 accepted.
+[8 : mcmc] Progress @ 2026-05-22 00:33:54 : 2978 steps taken, and 952 accepted.
+[12 : mcmc] Progress @ 2026-05-22 00:33:56 : 2922 steps taken, and 933 accepted.
+[11 : mcmc] Progress @ 2026-05-22 00:33:57 : 2913 steps taken, and 937 accepted.
+[0 : mcmc] Progress @ 2026-05-22 00:33:57 : 2923 steps taken, and 947 accepted.
+[10 : mcmc] Progress @ 2026-05-22 00:34:01 : 3001 steps taken, and 963 accepted.
+[1 : mcmc] Progress @ 2026-05-22 00:34:41 : 3094 steps taken, and 992 accepted.
+[15 : mcmc] Progress @ 2026-05-22 00:34:42 : 3041 steps taken, and 973 accepted.
+[2 : mcmc] Progress @ 2026-05-22 00:34:42 : 3004 steps taken, and 970 accepted.
+[14 : mcmc] Progress @ 2026-05-22 00:34:45 : 3110 steps taken, and 992 accepted.
+[7 : mcmc] Progress @ 2026-05-22 00:34:45 : 3061 steps taken, and 985 accepted.
+[4 : mcmc] Progress @ 2026-05-22 00:34:48 : 3074 steps taken, and 976 accepted.
+[6 : mcmc] Progress @ 2026-05-22 00:34:48 : 3022 steps taken, and 954 accepted.
+[3 : mcmc] Progress @ 2026-05-22 00:34:49 : 3011 steps taken, and 971 accepted.
+[9 : mcmc] Progress @ 2026-05-22 00:34:51 : 3091 steps taken, and 980 accepted.
+[13 : mcmc] Progress @ 2026-05-22 00:34:52 : 3166 steps taken, and 1015 accepted.
+[5 : mcmc] Progress @ 2026-05-22 00:34:55 : 3133 steps taken, and 1014 accepted.
+[8 : mcmc] Progress @ 2026-05-22 00:34:55 : 3219 steps taken, and 1028 accepted.
+[11 : mcmc] Progress @ 2026-05-22 00:34:57 : 3133 steps taken, and 1010 accepted.
+[0 : mcmc] Progress @ 2026-05-22 00:34:58 : 3143 steps taken, and 1018 accepted.
+[12 : mcmc] Progress @ 2026-05-22 00:34:58 : 3190 steps taken, and 1018 accepted.
+[10 : mcmc] Progress @ 2026-05-22 00:35:02 : 3236 steps taken, and 1035 accepted.
+[1 : mcmc] Progress @ 2026-05-22 00:35:42 : 3384 steps taken, and 1086 accepted.
+[15 : mcmc] Progress @ 2026-05-22 00:35:43 : 3308 steps taken, and 1056 accepted.
+[2 : mcmc] Progress @ 2026-05-22 00:35:45 : 3263 steps taken, and 1054 accepted.
+[14 : mcmc] Progress @ 2026-05-22 00:35:45 : 3382 steps taken, and 1080 accepted.
+[7 : mcmc] Progress @ 2026-05-22 00:35:47 : 3339 steps taken, and 1073 accepted.
+[6 : mcmc] Progress @ 2026-05-22 00:35:48 : 3310 steps taken, and 1044 accepted.
+[3 : mcmc] Progress @ 2026-05-22 00:35:49 : 3291 steps taken, and 1063 accepted.
+[4 : mcmc] Progress @ 2026-05-22 00:35:50 : 3303 steps taken, and 1047 accepted.
+[13 : mcmc] Progress @ 2026-05-22 00:35:52 : 3422 steps taken, and 1096 accepted.
+[9 : mcmc] Progress @ 2026-05-22 00:35:52 : 3424 steps taken, and 1085 accepted.
+[5 : mcmc] Progress @ 2026-05-22 00:35:55 : 3404 steps taken, and 1103 accepted.
+[8 : mcmc] Progress @ 2026-05-22 00:35:57 : 3562 steps taken, and 1139 accepted.
+[0 : mcmc] Progress @ 2026-05-22 00:35:59 : 3410 steps taken, and 1105 accepted.
+[12 : mcmc] Progress @ 2026-05-22 00:35:59 : 3477 steps taken, and 1111 accepted.
+[11 : mcmc] Progress @ 2026-05-22 00:36:00 : 3396 steps taken, and 1095 accepted.
+[10 : mcmc] Progress @ 2026-05-22 00:36:04 : 3465 steps taken, and 1103 accepted.
+[14 : mcmc] Progress @ 2026-05-22 00:36:45 : 3640 steps taken, and 1165 accepted.
+[1 : mcmc] Progress @ 2026-05-22 00:36:46 : 3667 steps taken, and 1178 accepted.
+[15 : mcmc] Progress @ 2026-05-22 00:36:46 : 3585 steps taken, and 1143 accepted.
+[7 : mcmc] Progress @ 2026-05-22 00:36:47 : 3591 steps taken, and 1155 accepted.
+[2 : mcmc] Progress @ 2026-05-22 00:36:47 : 3531 steps taken, and 1141 accepted.
+[3 : mcmc] Progress @ 2026-05-22 00:36:49 : 3539 steps taken, and 1143 accepted.
+[6 : mcmc] Progress @ 2026-05-22 00:36:50 : 3557 steps taken, and 1125 accepted.
+[4 : mcmc] Progress @ 2026-05-22 00:36:51 : 3655 steps taken, and 1162 accepted.
+[13 : mcmc] Progress @ 2026-05-22 00:36:53 : 3722 steps taken, and 1196 accepted.
+[9 : mcmc] Progress @ 2026-05-22 00:36:55 : 3656 steps taken, and 1161 accepted.
+[5 : mcmc] Progress @ 2026-05-22 00:36:56 : 3686 steps taken, and 1195 accepted.
+[8 : mcmc] Progress @ 2026-05-22 00:37:00 : 3807 steps taken, and 1216 accepted.
+[0 : mcmc] Progress @ 2026-05-22 00:37:00 : 3698 steps taken, and 1200 accepted.
+[12 : mcmc] Progress @ 2026-05-22 00:37:01 : 3729 steps taken, and 1193 accepted.
+[11 : mcmc] Progress @ 2026-05-22 00:37:03 : 3675 steps taken, and 1187 accepted.
+[10 : mcmc] Progress @ 2026-05-22 00:37:07 : 3732 steps taken, and 1187 accepted.
+[15 : mcmc] Progress @ 2026-05-22 00:37:51 : 3774 steps taken, and 1200 accepted.
+[4 : mcmc] Progress @ 2026-05-22 00:37:52 : 3813 steps taken, and 1213 accepted.
+[2 : mcmc] Progress @ 2026-05-22 00:37:52 : 3714 steps taken, and 1201 accepted.
+[7 : mcmc] Progress @ 2026-05-22 00:37:53 : 3799 steps taken, and 1222 accepted.
+[6 : mcmc] Progress @ 2026-05-22 00:37:53 : 3738 steps taken, and 1182 accepted.
+[3 : mcmc] Progress @ 2026-05-22 00:37:53 : 3703 steps taken, and 1196 accepted.
+[14 : mcmc] Progress @ 2026-05-22 00:37:59 : 3867 steps taken, and 1241 accepted.
+[1 : mcmc] Progress @ 2026-05-22 00:38:01 : 3893 steps taken, and 1250 accepted.
+[13 : mcmc] Progress @ 2026-05-22 00:38:03 : 3917 steps taken, and 1258 accepted.
+[0 : mcmc] Progress @ 2026-05-22 00:38:03 : 3846 steps taken, and 1247 accepted.
+[12 : mcmc] Progress @ 2026-05-22 00:38:04 : 3864 steps taken, and 1237 accepted.
+[5 : mcmc] Progress @ 2026-05-22 00:38:04 : 3838 steps taken, and 1245 accepted.
+[9 : mcmc] Progress @ 2026-05-22 00:38:04 : 3869 steps taken, and 1228 accepted.
+[11 : mcmc] Progress @ 2026-05-22 00:38:04 : 3793 steps taken, and 1226 accepted.
+[8 : mcmc] Progress @ 2026-05-22 00:38:04 : 3952 steps taken, and 1264 accepted.
+[10 : mcmc] Progress @ 2026-05-22 00:38:07 : 3876 steps taken, and 1231 accepted.
+[15 : mcmc] Progress @ 2026-05-22 00:38:51 : 3964 steps taken, and 1260 accepted.
+[2 : mcmc] Progress @ 2026-05-22 00:38:54 : 3896 steps taken, and 1259 accepted.
+[7 : mcmc] Progress @ 2026-05-22 00:38:54 : 3975 steps taken, and 1279 accepted.
+[4 : mcmc] Progress @ 2026-05-22 00:38:54 : 4005 steps taken, and 1274 accepted.
+[3 : mcmc] Progress @ 2026-05-22 00:38:56 : 3916 steps taken, and 1265 accepted.
+[6 : mcmc] Progress @ 2026-05-22 00:38:56 : 3942 steps taken, and 1247 accepted.
+[1 : mcmc] Progress @ 2026-05-22 00:39:02 : 4081 steps taken, and 1310 accepted.
+[14 : mcmc] Progress @ 2026-05-22 00:39:02 : 4110 steps taken, and 1320 accepted.
+[12 : mcmc] Progress @ 2026-05-22 00:39:04 : 4114 steps taken, and 1316 accepted.
+[0 : mcmc] Progress @ 2026-05-22 00:39:04 : 4087 steps taken, and 1320 accepted.
+[8 : mcmc] Progress @ 2026-05-22 00:39:05 : 4149 steps taken, and 1324 accepted.
+[9 : mcmc] Progress @ 2026-05-22 00:39:05 : 4072 steps taken, and 1294 accepted.
+[11 : mcmc] Progress @ 2026-05-22 00:39:06 : 4033 steps taken, and 1302 accepted.
+[13 : mcmc] Progress @ 2026-05-22 00:39:06 : 4109 steps taken, and 1320 accepted.
+[5 : mcmc] Progress @ 2026-05-22 00:39:06 : 4061 steps taken, and 1313 accepted.
+[10 : mcmc] Progress @ 2026-05-22 00:39:09 : 4075 steps taken, and 1294 accepted.
+[15 : mcmc] Progress @ 2026-05-22 00:39:56 : 4201 steps taken, and 1338 accepted.
+[7 : mcmc] Progress @ 2026-05-22 00:39:58 : 4223 steps taken, and 1357 accepted.
+[4 : mcmc] Progress @ 2026-05-22 00:39:59 : 4199 steps taken, and 1338 accepted.
+[2 : mcmc] Progress @ 2026-05-22 00:39:59 : 4131 steps taken, and 1334 accepted.
+[3 : mcmc] Progress @ 2026-05-22 00:40:00 : 4140 steps taken, and 1337 accepted.
+[6 : mcmc] Progress @ 2026-05-22 00:40:01 : 4168 steps taken, and 1320 accepted.
+[14 : mcmc] Progress @ 2026-05-22 00:40:02 : 4298 steps taken, and 1383 accepted.
+[12 : mcmc] Progress @ 2026-05-22 00:40:04 : 4291 steps taken, and 1370 accepted.
+[1 : mcmc] Progress @ 2026-05-22 00:40:05 : 4341 steps taken, and 1393 accepted.
+[0 : mcmc] Progress @ 2026-05-22 00:40:07 : 4285 steps taken, and 1385 accepted.
+[8 : mcmc] Progress @ 2026-05-22 00:40:08 : 4373 steps taken, and 1396 accepted.
+[9 : mcmc] Progress @ 2026-05-22 00:40:09 : 4296 steps taken, and 1368 accepted.
+[10 : mcmc] Progress @ 2026-05-22 00:40:10 : 4285 steps taken, and 1362 accepted.
+[11 : mcmc] Progress @ 2026-05-22 00:40:10 : 4239 steps taken, and 1369 accepted.
+[13 : mcmc] Progress @ 2026-05-22 00:40:10 : 4352 steps taken, and 1401 accepted.
+[5 : mcmc] Progress @ 2026-05-22 00:40:11 : 4275 steps taken, and 1380 accepted.
+[15 : mcmc] Progress @ 2026-05-22 00:40:58 : 4344 steps taken, and 1382 accepted.
+[7 : mcmc] Progress @ 2026-05-22 00:40:59 : 4356 steps taken, and 1400 accepted.
+[1 : mcmc] Progress @ 2026-05-22 00:41:06 : 4471 steps taken, and 1436 accepted.
+[4 : mcmc] Progress @ 2026-05-22 00:41:06 : 4380 steps taken, and 1395 accepted.
+[2 : mcmc] Progress @ 2026-05-22 00:41:06 : 4289 steps taken, and 1386 accepted.
+[3 : mcmc] Progress @ 2026-05-22 00:41:06 : 4248 steps taken, and 1372 accepted.
+[6 : mcmc] Progress @ 2026-05-22 00:41:07 : 4279 steps taken, and 1357 accepted.
+[8 : mcmc] Progress @ 2026-05-22 00:41:10 : 4504 steps taken, and 1435 accepted.
+[9 : mcmc] Progress @ 2026-05-22 00:41:10 : 4405 steps taken, and 1402 accepted.
+[12 : mcmc] Progress @ 2026-05-22 00:41:10 : 4388 steps taken, and 1401 accepted.
+[14 : mcmc] Progress @ 2026-05-22 00:41:10 : 4425 steps taken, and 1423 accepted.
+[10 : mcmc] Progress @ 2026-05-22 00:41:13 : 4406 steps taken, and 1397 accepted.
+[11 : mcmc] Progress @ 2026-05-22 00:41:13 : 4340 steps taken, and 1402 accepted.
+[13 : mcmc] Progress @ 2026-05-22 00:41:14 : 4460 steps taken, and 1435 accepted.
+[5 : mcmc] Progress @ 2026-05-22 00:41:15 : 4375 steps taken, and 1412 accepted.
+[0 : mcmc] Progress @ 2026-05-22 00:41:15 : 4397 steps taken, and 1420 accepted.
+[15 : mcmc] Progress @ 2026-05-22 00:42:02 : 4461 steps taken, and 1419 accepted.
+[7 : mcmc] Progress @ 2026-05-22 00:42:03 : 4429 steps taken, and 1424 accepted.
+[1 : mcmc] Progress @ 2026-05-22 00:42:08 : 4607 steps taken, and 1481 accepted.
+[3 : mcmc] Progress @ 2026-05-22 00:42:08 : 4366 steps taken, and 1412 accepted.
+[6 : mcmc] Progress @ 2026-05-22 00:42:08 : 4407 steps taken, and 1399 accepted.
+[2 : mcmc] Progress @ 2026-05-22 00:42:09 : 4405 steps taken, and 1422 accepted.
+[4 : mcmc] Progress @ 2026-05-22 00:42:09 : 4459 steps taken, and 1421 accepted.
+[8 : mcmc] Progress @ 2026-05-22 00:42:10 : 4616 steps taken, and 1468 accepted.
+[9 : mcmc] Progress @ 2026-05-22 00:42:10 : 4525 steps taken, and 1443 accepted.
+[14 : mcmc] Progress @ 2026-05-22 00:42:10 : 4581 steps taken, and 1470 accepted.
+[5 : mcmc] Progress @ 2026-05-22 00:42:15 : 4492 steps taken, and 1450 accepted.
+[12 : mcmc] Progress @ 2026-05-22 00:42:15 : 4526 steps taken, and 1445 accepted.
+[11 : mcmc] Progress @ 2026-05-22 00:42:15 : 4461 steps taken, and 1441 accepted.
+[13 : mcmc] Progress @ 2026-05-22 00:42:16 : 4572 steps taken, and 1472 accepted.
+[10 : mcmc] Progress @ 2026-05-22 00:42:16 : 4513 steps taken, and 1432 accepted.
+[0 : mcmc] Progress @ 2026-05-22 00:42:18 : 4535 steps taken, and 1466 accepted.
+[1 : mcmc] Learn + convergence test @ 1520 samples accepted.
+[1 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[13 : mcmc] Learn + convergence test @ 1520 samples accepted.
+[13 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[14 : mcmc] Learn + convergence test @ 1520 samples accepted.
+[14 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[8 : mcmc] Learn + convergence test @ 1520 samples accepted.
+[8 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[0 : mcmc] Learn + convergence test @ 1520 samples accepted.
+[0 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[7 : mcmc] Progress @ 2026-05-22 00:43:03 : 4642 steps taken, and 1492 accepted.
+[15 : mcmc] Progress @ 2026-05-22 00:43:04 : 4714 steps taken, and 1503 accepted.
+[5 : mcmc] Learn + convergence test @ 1520 samples accepted.
+[5 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[2 : mcmc] Progress @ 2026-05-22 00:43:09 : 4575 steps taken, and 1477 accepted.
+[6 : mcmc] Progress @ 2026-05-22 00:43:09 : 4591 steps taken, and 1460 accepted.
+[4 : mcmc] Progress @ 2026-05-22 00:43:10 : 4694 steps taken, and 1497 accepted.
+[1 : mcmc] Progress @ 2026-05-22 00:43:10 : 4838 steps taken, and 1556 accepted.
+[9 : mcmc] Progress @ 2026-05-22 00:43:10 : 4743 steps taken, and 1514 accepted.
+[8 : mcmc] Progress @ 2026-05-22 00:43:10 : 4812 steps taken, and 1528 accepted.
+[12 : mcmc] Learn + convergence test @ 1520 samples accepted.
+[12 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[3 : mcmc] Progress @ 2026-05-22 00:43:10 : 4590 steps taken, and 1484 accepted.
+[11 : mcmc] Learn + convergence test @ 1520 samples accepted.
+[11 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[14 : mcmc] Progress @ 2026-05-22 00:43:13 : 4770 steps taken, and 1532 accepted.
+[9 : mcmc] Learn + convergence test @ 1520 samples accepted.
+[9 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[13 : mcmc] Progress @ 2026-05-22 00:43:16 : 4781 steps taken, and 1536 accepted.
+[10 : mcmc] Progress @ 2026-05-22 00:43:17 : 4729 steps taken, and 1495 accepted.
+[5 : mcmc] Progress @ 2026-05-22 00:43:17 : 4727 steps taken, and 1527 accepted.
+[12 : mcmc] Progress @ 2026-05-22 00:43:17 : 4800 steps taken, and 1534 accepted.
+[7 : mcmc] Learn + convergence test @ 1520 samples accepted.
+[7 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[11 : mcmc] Progress @ 2026-05-22 00:43:18 : 4717 steps taken, and 1524 accepted.
+[0 : mcmc] Progress @ 2026-05-22 00:43:20 : 4770 steps taken, and 1542 accepted.
+[15 : mcmc] Learn + convergence test @ 1520 samples accepted.
+[15 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[4 : mcmc] Learn + convergence test @ 1520 samples accepted.
+[4 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[2 : mcmc] Learn + convergence test @ 1520 samples accepted.
+[2 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[3 : mcmc] Learn + convergence test @ 1520 samples accepted.
+[3 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[10 : mcmc] Learn + convergence test @ 1520 samples accepted.
+[10 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[6 : mcmc] Learn + convergence test @ 1520 samples accepted.
+[6 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[0 : mcmc] All chains are ready to check convergence and learn a new proposal covmat
+[0 : mcmc]  - Acceptance rate: 0.962 = avg([0.9706, 0.9697, 0.9722, 0.9709, 0.9629, 0.9632, 0.9719, 0.9628, 0.9462, 0.9704, 0.9321, 0.9750, 0.9586, 0.9586, 0.9672, 0.9474])
+[0 : mcmc]  - Convergence of means: R-1 = 89.756698 after 24996 accepted steps = sum([1582, 1600, 1540, 1536, 1555, 1572, 1520, 1551, 1581, 1573, 1537, 1557, 1576, 1576, 1591, 1549])
+[0 : mcmc] Convergence less than requested for updates: waiting until the next convergence check.
+[7 : mcmc] Progress @ 2026-05-22 00:44:04 : 4919 steps taken, and 1581 accepted.
+[15 : mcmc] Progress @ 2026-05-22 00:44:06 : 4945 steps taken, and 1573 accepted.
+[4 : mcmc] Progress @ 2026-05-22 00:44:10 : 4969 steps taken, and 1586 accepted.
+[2 : mcmc] Progress @ 2026-05-22 00:44:10 : 4863 steps taken, and 1573 accepted.
+[6 : mcmc] Progress @ 2026-05-22 00:44:10 : 4882 steps taken, and 1555 accepted.
+[1 : mcmc] Progress @ 2026-05-22 00:44:10 : 5086 steps taken, and 1634 accepted.
+[3 : mcmc] Progress @ 2026-05-22 00:44:10 : 4873 steps taken, and 1574 accepted.
+[8 : mcmc] Progress @ 2026-05-22 00:44:12 : 5089 steps taken, and 1611 accepted.
+[9 : mcmc] Progress @ 2026-05-22 00:44:13 : 5015 steps taken, and 1600 accepted.
+[14 : mcmc] Progress @ 2026-05-22 00:44:13 : 5076 steps taken, and 1626 accepted.
+[13 : mcmc] Progress @ 2026-05-22 00:44:18 : 5053 steps taken, and 1623 accepted.
+[12 : mcmc] Progress @ 2026-05-22 00:44:18 : 5084 steps taken, and 1622 accepted.
+[10 : mcmc] Progress @ 2026-05-22 00:44:18 : 5008 steps taken, and 1582 accepted.
+[5 : mcmc] Progress @ 2026-05-22 00:44:18 : 5005 steps taken, and 1619 accepted.
+[11 : mcmc] Progress @ 2026-05-22 00:44:21 : 4974 steps taken, and 1608 accepted.
+[0 : mcmc] Progress @ 2026-05-22 00:44:21 : 5046 steps taken, and 1635 accepted.
+[7 : mcmc] Progress @ 2026-05-22 00:45:04 : 5181 steps taken, and 1667 accepted.
+[15 : mcmc] Progress @ 2026-05-22 00:45:08 : 5270 steps taken, and 1677 accepted.
+[4 : mcmc] Progress @ 2026-05-22 00:45:10 : 5218 steps taken, and 1664 accepted.
+[3 : mcmc] Progress @ 2026-05-22 00:45:11 : 5135 steps taken, and 1659 accepted.
+[1 : mcmc] Progress @ 2026-05-22 00:45:11 : 5397 steps taken, and 1737 accepted.
+[2 : mcmc] Progress @ 2026-05-22 00:45:12 : 5108 steps taken, and 1649 accepted.
+[6 : mcmc] Progress @ 2026-05-22 00:45:13 : 5129 steps taken, and 1635 accepted.
+[9 : mcmc] Progress @ 2026-05-22 00:45:14 : 5276 steps taken, and 1686 accepted.
+[14 : mcmc] Progress @ 2026-05-22 00:45:14 : 5327 steps taken, and 1706 accepted.
+[8 : mcmc] Progress @ 2026-05-22 00:45:16 : 5386 steps taken, and 1709 accepted.
+[12 : mcmc] Progress @ 2026-05-22 00:45:18 : 5310 steps taken, and 1693 accepted.
+[10 : mcmc] Progress @ 2026-05-22 00:45:19 : 5244 steps taken, and 1657 accepted.
+[13 : mcmc] Progress @ 2026-05-22 00:45:19 : 5312 steps taken, and 1708 accepted.
+[5 : mcmc] Progress @ 2026-05-22 00:45:21 : 5265 steps taken, and 1702 accepted.
+[0 : mcmc] Progress @ 2026-05-22 00:45:24 : 5314 steps taken, and 1722 accepted.
+[11 : mcmc] Progress @ 2026-05-22 00:45:25 : 5238 steps taken, and 1692 accepted.
+[7 : mcmc] Progress @ 2026-05-22 00:46:09 : 5342 steps taken, and 1720 accepted.
+[15 : mcmc] Progress @ 2026-05-22 00:46:09 : 5394 steps taken, and 1717 accepted.
+[3 : mcmc] Progress @ 2026-05-22 00:46:12 : 5291 steps taken, and 1710 accepted.
+[1 : mcmc] Progress @ 2026-05-22 00:46:13 : 5503 steps taken, and 1771 accepted.
+[4 : mcmc] Progress @ 2026-05-22 00:46:13 : 5405 steps taken, and 1725 accepted.
+[2 : mcmc] Progress @ 2026-05-22 00:46:17 : 5290 steps taken, and 1703 accepted.
+[6 : mcmc] Progress @ 2026-05-22 00:46:17 : 5279 steps taken, and 1684 accepted.
+[9 : mcmc] Progress @ 2026-05-22 00:46:17 : 5404 steps taken, and 1727 accepted.
+[14 : mcmc] Progress @ 2026-05-22 00:46:18 : 5485 steps taken, and 1756 accepted.
+[8 : mcmc] Progress @ 2026-05-22 00:46:19 : 5557 steps taken, and 1762 accepted.
+[12 : mcmc] Progress @ 2026-05-22 00:46:22 : 5459 steps taken, and 1739 accepted.
+[13 : mcmc] Progress @ 2026-05-22 00:46:22 : 5467 steps taken, and 1757 accepted.
+[10 : mcmc] Progress @ 2026-05-22 00:46:23 : 5405 steps taken, and 1709 accepted.
+[5 : mcmc] Progress @ 2026-05-22 00:46:24 : 5425 steps taken, and 1755 accepted.
+[0 : mcmc] Progress @ 2026-05-22 00:46:27 : 5451 steps taken, and 1765 accepted.
+[11 : mcmc] Progress @ 2026-05-22 00:46:27 : 5409 steps taken, and 1745 accepted.
+[7 : mcmc] Progress @ 2026-05-22 00:47:10 : 5524 steps taken, and 1777 accepted.
+[15 : mcmc] Progress @ 2026-05-22 00:47:10 : 5611 steps taken, and 1784 accepted.
+[1 : mcmc] Progress @ 2026-05-22 00:47:13 : 5722 steps taken, and 1838 accepted.
+[3 : mcmc] Progress @ 2026-05-22 00:47:13 : 5472 steps taken, and 1768 accepted.
+[4 : mcmc] Progress @ 2026-05-22 00:47:13 : 5661 steps taken, and 1803 accepted.
+[6 : mcmc] Progress @ 2026-05-22 00:47:17 : 5509 steps taken, and 1758 accepted.
+[9 : mcmc] Progress @ 2026-05-22 00:47:17 : 5648 steps taken, and 1807 accepted.
+[2 : mcmc] Progress @ 2026-05-22 00:47:18 : 5545 steps taken, and 1786 accepted.
+[14 : mcmc] Progress @ 2026-05-22 00:47:19 : 5728 steps taken, and 1832 accepted.
+[8 : mcmc] Progress @ 2026-05-22 00:47:20 : 5804 steps taken, and 1838 accepted.
+[13 : mcmc] Progress @ 2026-05-22 00:47:22 : 5687 steps taken, and 1827 accepted.
+[10 : mcmc] Progress @ 2026-05-22 00:47:23 : 5620 steps taken, and 1779 accepted.
+[12 : mcmc] Progress @ 2026-05-22 00:47:24 : 5727 steps taken, and 1820 accepted.
+[5 : mcmc] Progress @ 2026-05-22 00:47:25 : 5669 steps taken, and 1835 accepted.
+[0 : mcmc] Progress @ 2026-05-22 00:47:27 : 5654 steps taken, and 1829 accepted.
+[11 : mcmc] Progress @ 2026-05-22 00:47:30 : 5639 steps taken, and 1821 accepted.
+[7 : mcmc] Progress @ 2026-05-22 00:48:10 : 5754 steps taken, and 1853 accepted.
+[15 : mcmc] Progress @ 2026-05-22 00:48:11 : 5847 steps taken, and 1859 accepted.
+[1 : mcmc] Progress @ 2026-05-22 00:48:14 : 5985 steps taken, and 1922 accepted.
+[4 : mcmc] Progress @ 2026-05-22 00:48:14 : 5920 steps taken, and 1884 accepted.
+[3 : mcmc] Progress @ 2026-05-22 00:48:14 : 5724 steps taken, and 1851 accepted.
+[6 : mcmc] Progress @ 2026-05-22 00:48:18 : 5755 steps taken, and 1837 accepted.
+[2 : mcmc] Progress @ 2026-05-22 00:48:18 : 5752 steps taken, and 1852 accepted.
+[9 : mcmc] Progress @ 2026-05-22 00:48:20 : 5869 steps taken, and 1878 accepted.
+[8 : mcmc] Progress @ 2026-05-22 00:48:21 : 6044 steps taken, and 1915 accepted.
+[14 : mcmc] Progress @ 2026-05-22 00:48:21 : 5966 steps taken, and 1909 accepted.
+[13 : mcmc] Progress @ 2026-05-22 00:48:23 : 5936 steps taken, and 1908 accepted.
+[12 : mcmc] Progress @ 2026-05-22 00:48:24 : 6011 steps taken, and 1909 accepted.
+[10 : mcmc] Progress @ 2026-05-22 00:48:26 : 5870 steps taken, and 1859 accepted.
+[5 : mcmc] Progress @ 2026-05-22 00:48:27 : 5912 steps taken, and 1912 accepted.
+[0 : mcmc] Progress @ 2026-05-22 00:48:27 : 5871 steps taken, and 1901 accepted.
+[11 : mcmc] Progress @ 2026-05-22 00:48:32 : 5892 steps taken, and 1904 accepted.
+[7 : mcmc] Progress @ 2026-05-22 00:49:14 : 5997 steps taken, and 1930 accepted.
+[4 : mcmc] Progress @ 2026-05-22 00:49:14 : 6148 steps taken, and 1955 accepted.
+[15 : mcmc] Progress @ 2026-05-22 00:49:15 : 6095 steps taken, and 1937 accepted.
+[1 : mcmc] Progress @ 2026-05-22 00:49:15 : 6206 steps taken, and 1995 accepted.
+[3 : mcmc] Progress @ 2026-05-22 00:49:16 : 5985 steps taken, and 1937 accepted.
+[2 : mcmc] Progress @ 2026-05-22 00:49:20 : 6004 steps taken, and 1933 accepted.
+[9 : mcmc] Progress @ 2026-05-22 00:49:20 : 6103 steps taken, and 1950 accepted.
+[6 : mcmc] Progress @ 2026-05-22 00:49:20 : 5983 steps taken, and 1913 accepted.
+[14 : mcmc] Progress @ 2026-05-22 00:49:21 : 6174 steps taken, and 1976 accepted.
+[8 : mcmc] Progress @ 2026-05-22 00:49:22 : 6289 steps taken, and 1996 accepted.

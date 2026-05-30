@@ -1,0 +1,12 @@
+mcmc:
+    # covmat: auto
+    learn_proposal: True
+    learn_proposal_Rminus1_max: 30.0
+    # learn_proposal_Rminus1_max_early: 30.0
+    output_every: 60s
+    measure_speeds: True
+    max_tries: 500
+    drag: False
+    oversample_power: 0.4
+    proposal_scale: 1.5
+    Rminus1_stop: 0.01

@@ -19,7 +19,23 @@ theory:
     - tau
     - Omega_k
     - m_ncdm
-  FSBAO_likelihood_gc_w0watau_direct.Taylor_pk_theory_zs:
+  FSBAO_likelihood_gc_w0watau_direct.direct_pk_theory_zs:
+      zfids:
+      - 0.30
+      - 0.51
+      - 0.71
+      - 0.92
+      - 1.32
+      - 1.49
+      fid_dists: 
+      - [117.3640762885204, 833.3078565389818]
+      - [133.05386526145136,1337.692980282394]
+      - [150.38072236661685,1761.8521557340339]
+      - [170.78364036132075, 2154.866559272748]
+      - [215.0091653164908, 2781.0509683317605]
+      - [235.6651691492499, 3007.4665466663487]
+      stop_at_error: True
+  FSBAO_likelihood_gc_w0watau_direct.direct_Xi_theory_zs:
       zfids:
       - 0.30
       - 0.51
@@ -52,15 +68,13 @@ theory:
 
 likelihood:
   # planck_NPIPE_highl_CamSpec.TTTEEE:
-  # planck_2018_lowl.TT: null
-  # planck_2018_lowl.EE: null
-  planck_NPIPE_highl_CamSpec.TTTEEE: null
-  act_dr6_lenslike.ACTDR6LensLike:
-    stop_at_error: true
-    lens_only: false
-    no_actlike_cmb_corrections: true
-    lmax: 4000
-    variant: actplanck_baseline
+  #   stop_at_error: true
+  # act_dr6_lenslike.ACTDR6LensLike:
+  #   stop_at_error: true
+  #   lens_only: false
+  #   no_actlike_cmb_corrections: true
+  #   lmax: 4000
+  #   variant: actplanck_baseline
   DESI_RSDBAO_BGS:
     class: FSBAO_likelihood_gc_w0watau_direct.JointLikelihood
     basedir: ./data/DR1/spec_z_dat/
@@ -335,7 +349,7 @@ params:
     ref:
       dist: norm
       loc: -1.0
-      scale: 0.05
+      scale: 0.5
     latex: w_0
   wa:
     prior:
@@ -344,7 +358,7 @@ params:
     ref:
       dist: norm
       loc: 0.0
-      scale: 0.05
+      scale: 0.5
     latex: w_{a}
   omega_b:
     prior: 
@@ -713,37 +727,37 @@ params:
       scale: 0.1
     latex: F^{BGS}
   Sigpar_BGS:
-    value: 0.0
-    # prior:
-    #   dist: norm
-    #   loc: 0.0
-    #   scale: 2.0
-    # ref:
-    #   dist: norm
-    #   loc: 0.0
-    #   scale: 0.1
+    # value: 0.0
+    prior:
+      dist: norm
+      loc: 0.0
+      scale: 2.0
+    ref:
+      dist: norm
+      loc: 0.0
+      scale: 0.1
     latex: \Sigma_{\parallel}^{BGS}   
   Sigperp_BGS:
-    value: 0.0
-    # prior:
-    #   dist: norm
-    #   loc: 0.0
-    #   scale: 1.0
-    # ref:
-    #   dist: norm
-    #   loc: 0.0
-    #   scale: 0.1
+    # value: 0.0
+    prior:
+      dist: norm
+      loc: 0.0
+      scale: 1.0
+    ref:
+      dist: norm
+      loc: 0.0
+      scale: 0.1
     latex: \Sigma_{\perp}^{BGS}
   Sigs_BGS:
-    value: 0.0
-    # prior:
-    #   dist: norm
-    #   loc: 0.0
-    #   scale: 2.0
-    # ref:
-    #   dist: norm
-    #   loc: 2.0
-    #   scale: 0.1
+    # value: 0.0
+    prior:
+      dist: norm
+      loc: 2.0
+      scale: 2.0
+    ref:
+      dist: norm
+      loc: 2.0
+      scale: 0.1
     latex: \Sigma_{s}^{BGS}
   
   B1_LRG1:
@@ -768,37 +782,37 @@ params:
     latex: F^{LRG1}
     
   Sigpar_LRG1:
-    value: 0.0
-    # prior:
-    #   dist: norm
-    #   loc: 0.0
-    #   scale: 2.0
-    # ref:
-    #   dist: norm
-    #   loc: 0.0
-    #   scale: 0.1
+    # value: 0.0
+    prior:
+      dist: norm
+      loc: 0.0
+      scale: 2.0
+    ref:
+      dist: norm
+      loc: 0.0
+      scale: 0.1
     latex: \Sigma_{\parallel}^{LRG1}   
   Sigperp_LRG1:
-    value: 0.0
-    # prior:
-    #   dist: norm
-    #   loc: 0.0
-    #   scale: 1.0
-    # ref:
-    #   dist: norm
-    #   loc: 0.0
-    #   scale: 0.1
+    # value: 0.0
+    prior:
+      dist: norm
+      loc: 0.0
+      scale: 1.0
+    ref:
+      dist: norm
+      loc: 0.0
+      scale: 0.1
     latex: \Sigma_{\perp}^{LRG1}
   Sigs_LRG1:
-    value: 0.0
-    # prior:
-    #   dist: norm
-    #   loc: 0.0
-    #   scale: 2.0
-    # ref:
-    #   dist: norm
-    #   loc: 2.0
-    #   scale: 0.1
+    # value: 0.0
+    prior:
+      dist: norm
+      loc: 2.0
+      scale: 2.0
+    ref:
+      dist: norm
+      loc: 2.0
+      scale: 0.1
     latex: \Sigma_{s}^{LRG1}
     
   B1_LRG2:
@@ -823,37 +837,37 @@ params:
     latex: F^{LRG2}
     
   Sigpar_LRG2:
-    value: 0.0
-    # prior:
-    #   dist: norm
-    #   loc: 0.0
-    #   scale: 2.0
-    # ref:
-    #   dist: norm
-    #   loc: 0.0
-    #   scale: 0.1
+    # value: 0.0
+    prior:
+      dist: norm
+      loc: 0.0
+      scale: 2.0
+    ref:
+      dist: norm
+      loc: 0.0
+      scale: 0.1
     latex: \Sigma_{\parallel}^{LRG2}   
   Sigperp_LRG2:
-    value: 0.0
-    # prior:
-    #   dist: norm
-    #   loc: 0.0
-    #   scale: 1.0
-    # ref:
-    #   dist: norm
-    #   loc: 0.0
-    #   scale: 0.1
+    # value: 0.0
+    prior:
+      dist: norm
+      loc: 0.0
+      scale: 1.0
+    ref:
+      dist: norm
+      loc: 0.0
+      scale: 0.1
     latex: \Sigma_{\perp}^{LRG2}
   Sigs_LRG2:
-    value: 0.0
-    # prior:
-    #   dist: norm
-    #   loc: 0.0
-    #   scale: 2.0
-    # ref:
-    #   dist: norm
-    #   loc: 2.0
-    #   scale: 0.1
+    # value: 0.0
+    prior:
+      dist: norm
+      loc: 2.0
+      scale: 2.0
+    ref:
+      dist: norm
+      loc: 2.0
+      scale: 0.1
     latex: \Sigma_{s}^{LRG2}
     
   B1_LRG3:
@@ -877,37 +891,37 @@ params:
       scale: 0.1
     latex: F^{LRG3}
   Sigpar_LRG3:
-    value: 0.0
-    # prior:
-    #   dist: norm
-    #   loc: 0.0
-    #   scale: 2.0
-    # ref:
-    #   dist: norm
-    #   loc: 0.0
-    #   scale: 0.1
+    # value: 0.0
+    prior:
+      dist: norm
+      loc: 0.0
+      scale: 2.0
+    ref:
+      dist: norm
+      loc: 0.0
+      scale: 0.1
     latex: \Sigma_{\parallel}^{LRG3}   
   Sigperp_LRG3:
-    value: 0.0
-    # prior:
-    #   dist: norm
-    #   loc: 0.0
-    #   scale: 1.0
-    # ref:
-    #   dist: norm
-    #   loc: 0.0
-    #   scale: 0.1
+    # value: 0.0
+    prior:
+      dist: norm
+      loc: 0.0
+      scale: 1.0
+    ref:
+      dist: norm
+      loc: 0.0
+      scale: 0.1
     latex: \Sigma_{\perp}^{LRG3}
   Sigs_LRG3:
-    value: 0.0
-    # prior:
-    #   dist: norm
-    #   loc: 0.0
-    #   scale: 2.0
-    # ref:
-    #   dist: norm
-    #   loc: 2.0
-    #   scale: 0.1
+    # value: 0.0
+    prior:
+      dist: norm
+      loc: 2.0
+      scale: 2.0
+    ref:
+      dist: norm
+      loc: 2.0
+      scale: 0.1
     latex: \Sigma_{s}^{LRG3}
 
   B1_ELG:
@@ -931,37 +945,37 @@ params:
       scale: 0.1
     latex: F^{ELG}
   Sigpar_ELG:
-    value: 0.0
-    # prior:
-    #   dist: norm
-    #   loc: 0.0
-    #   scale: 2.0
-    # ref:
-    #   dist: norm
-    #   loc: 0.0
-    #   scale: 0.1
+    # value: 0.0
+    prior:
+      dist: norm
+      loc: 0.0
+      scale: 2.0
+    ref:
+      dist: norm
+      loc: 0.0
+      scale: 0.1
     latex: \Sigma_{\parallel}^{ELG}   
   Sigperp_ELG:
-    value: 0.0
-    # prior:
-    #   dist: norm
-    #   loc: 0.0
-    #   scale: 1.0
-    # ref:
-    #   dist: norm
-    #   loc: 0.0
-    #   scale: 0.1
+    # value: 0.0
+    prior:
+      dist: norm
+      loc: 0.0
+      scale: 1.0
+    ref:
+      dist: norm
+      loc: 0.0
+      scale: 0.1
     latex: \Sigma_{\perp}^{ELG}
   Sigs_ELG:
-    value: 0.0
-    # prior:
-    #   dist: norm
-    #   loc: 0.0
-    #   scale: 2.0
-    # ref:
-    #   dist: norm
-    #   loc: 2.0
-    #   scale: 0.1
+    # value: 0.0
+    prior:
+      dist: norm
+      loc: 2.0
+      scale: 2.0
+    ref:
+      dist: norm
+      loc: 2.0
+      scale: 0.1
     latex: \Sigma_{s}^{ELG}
     
   B1_QSO:
@@ -985,37 +999,37 @@ params:
       scale: 0.1
     latex: F^{QSO}
   Sigpar_QSO:
-    value: 0.0
-    # prior:
-    #   dist: norm
-    #   loc: 0.0
-    #   scale: 2.0
-    # ref:
-    #   dist: norm
-    #   loc: 0.0
-    #   scale: 0.1
+    # value: 0.0
+    prior:
+      dist: norm
+      loc: 0.0
+      scale: 2.0
+    ref:
+      dist: norm
+      loc: 0.0
+      scale: 0.1
     latex: \Sigma_{\parallel}^{QSO}   
   Sigperp_QSO:
-    value: 0.0
-    # prior:
-    #   dist: norm
-    #   loc: 0.0
-    #   scale: 1.0
-    # ref:
-    #   dist: norm
-    #   loc: 0.0
-    #   scale: 0.1
+    # value: 0.0
+    prior:
+      dist: norm
+      loc: 0.0
+      scale: 1.0
+    ref:
+      dist: norm
+      loc: 0.0
+      scale: 0.1
     latex: \Sigma_{\perp}^{QSO}
   Sigs_QSO:
-    value: 0.0
-    # prior:
-    #   dist: norm
-    #   loc: 0.0
-    #   scale: 2.0
-    # ref:
-    #   dist: norm
-    #   loc: 2.0
-    #   scale: 0.1
+    # value: 0.0
+    prior:
+      dist: norm
+      loc: 2.0
+      scale: 2.0
+    ref:
+      dist: norm
+      loc: 2.0
+      scale: 0.1
     latex: \Sigma_{s}^{QSO}
     
     
@@ -1038,7 +1052,7 @@ sampler:
     #   - [ 6, [bsig8_BGS,b2sig8_BGS,bssig8_BGS,bsig8_LRG1,b2sig8_LRG1,bssig8_LRG1,bsig8_LRG2,b2sig8_LRG2,bssig8_LRG2,bsig8_LRG3,b2sig8_LRG3,bssig8_LRG3,bsig8_ELG,b2sig8_ELG,bssig8_ELG,bsig8_QSO,b2sig8_QSO,bssig8_QSO]]
     #   - [6,[B1_BGS,F_BGS,B1_LRG1,F_LRG1,B1_LRG2,F_LRG2,B1_LRG3,F_LRG3,B1_ELG,F_ELG,B1_QSO,F_QSO]]
     
-output: chains/cam spec_kk_RSDBAO/chain
+output: chains/RSDBAO/sigs/chain
 # debug: True
 # debug_file: chains/w0wa/base_union3/class/chain
 timing: True

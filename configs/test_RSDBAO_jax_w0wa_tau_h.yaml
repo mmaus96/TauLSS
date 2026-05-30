@@ -1,0 +1,25 @@
+theory: !defaults [./likelihoods_theories/class,./likelihoods_theories/RSD, ./likelihoods_theories/BAO_jax]
+
+likelihood: !defaults 
+- ./likelihoods_theories/lik_RSDBAO_BGS
+- ./likelihoods_theories/lik_RSDBAO_LRG1
+- ./likelihoods_theories/lik_RSDBAO_LRG2
+- ./likelihoods_theories/lik_RSDBAO_LRG3
+- ./likelihoods_theories/lik_RSDBAO_ELG
+- ./likelihoods_theories/lik_RSDBAO_QSO
+
+params: !defaults 
+- ./params/cosmo_base_h
+- ./params/w0wa_free
+- ./params/tau_free
+- ./params/Mnu_0.06
+- ./params/RSDBAO_BGS-sfid
+- ./params/RSDBAO_LRG1-sfid
+- ./params/RSDBAO_LRG2-sfid
+- ./params/RSDBAO_LRG3-sfid
+- ./params/RSDBAO_ELG-sfid
+- ./params/RSDBAO_QSO-sfid
+
+sampler: !defaults [./likelihoods_theories/mcmc]
+timing: True
+output: ../chains/test_RSDBAO_jax_w0wa_tau_h

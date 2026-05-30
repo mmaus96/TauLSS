@@ -11,10 +11,10 @@ module load python
 # conda remove --name cobaya --all
 # conda clean --all
 #
-conda create --name cobaya --clone nersc-mpi4py
+conda create --name cobaya_tau --clone nersc-mpi4py
 #
 # Switch to the environment.
-conda activate cobaya
+conda activate cobaya_tau
 #
 # Install some basic stuff
 conda install -c conda-forge numpy scipy matplotlib -y
@@ -25,11 +25,15 @@ conda install -c conda-forge healpy -y
 # Set up the environment for Jupyter.
 conda install -c conda-forge ipykernel ipython jupyter -y
 python3 -Xfrozen_models=off -m ipykernel install --user \
-        --name cobaya --display-name Cobaya-env
+        --name cobaya_tau --display-name cobaya_tau
+
+python3 -m pip install act_dr6_lenslike
 #
 # Now install Cobaya
 python3 -m pip install cobaya --upgrade
 #python3 -m pip install git+https://github.com/CobayaSampler/cobaya
+
+
 #
 # and any "cosmo" packages it wants
 rm -rf  $SCRATCH/Cobaya/Packages
@@ -55,3 +59,8 @@ python3 -m pip install velocileptors # --upgrade
 # and findiff for the Taylor series emulators
 python3 -m pip install findiff # --upgrade
 #
+
+#Optional:
+python -m pip install git+https://github.com/cosmodesi/cosmoprimo
+pip install -U jax
+pip install interpax

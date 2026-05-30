@@ -66,6 +66,7 @@ class JointLikelihood(Likelihood):
     invcov_fac: float
     jeff: bool
     AP_scale: bool
+    bsig8: float
 
     def initialize(self):
         """Sets up the class."""
@@ -97,14 +98,20 @@ class JointLikelihood(Likelihood):
         # Binning matrix for correlation function, one for each BAO sample
         self.binmat = dict((name, None) for name in self.bao_sample_names)
         
-        rmin, rmax, dr = 50, 160, 0.5
-        rvec = np.arange(rmin, rmax, dr)
+        # rmin, rmax, dr = 50, 160, 0.1
+        # rvec = np.arange(rmin, rmax, dr)
         
-        self.delta = 0.06
-        self.B20 = np.array([self.B20_x(self.delta*r) for r in rvec])
-        self.B21 = np.array([self.B21_x(self.delta*r) for r in rvec])
+        
         
         self.loadData()
+        
+        self.delta = 0.06
+        self.B20 = {}
+        self.B21 = {}
+        for bao_sample_name in self.bao_sample_names:
+            rvec = self.rdats[bao_sample_name]
+            self.B20[bao_sample_name] = np.array([self.B20_x(self.delta*r) for r in rvec])
+            self.B21[bao_sample_name] = np.array([self.B21_x(self.delta*r) for r in rvec])
         
         
         #
@@ -136,9 +143,9 @@ class JointLikelihood(Likelihood):
                'taylor_xi_ell_mod': None,\
                'zPars': None,\
                'ns': None,\
-               'H0_emu': None,\
-               'sig8': None,\
-               # 'sigma8': None,\
+               'H0': None,\
+            #    'sig8': None,\
+               'sigma8': None,\
                # 'omega_b': None,\
                # 'omega_cdm': None,\
                'omegam': None,\
@@ -191,8 +198,8 @@ class JointLikelihood(Likelihood):
             thy_obs = np.concatenate( (thy_obs,fs_obs) )
             
             if fs_sample_name in self.bao_sample_names:
-                bao_thy = self.bao_predict(fs_sample_name,zfid,thetas=thetas)
-                bao_obs = self.bao_observe(bao_thy,fs_sample_name)
+                bao_thy = self.bao_predict(fs_sample_name,zfid)
+                bao_obs = self.bao_observe(bao_thy,fs_sample_name,thetas=thetas)
                 thy_obs = np.concatenate( (thy_obs, bao_obs) )
         
         # for bao_sample_name in self.bao_sample_names:
@@ -499,13 +506,16 @@ class JointLikelihood(Likelihood):
         bias = [b1, b2, bs, b3]
         cterm = [alp0,alp2,alp4,alp6]
         stoch = [sn0, sn2, sn4]
+        # print(bias+cterm+stoch)
         if self.AP_scale:
             qpar,qperp = zPars[zstr][2],zPars[zstr][3]
             Aap = (qpar*qperp**2)**(-1)
             cterm = [a/Aap for a in cterm]
             stoch = [n/Aap for n in stoch]
+            bias  = [b/np.sqrt(Aap) for b in bias]
         
         bvec = bias + cterm + stoch
+        # print(bvec)
         self.bvec = bvec
         #print(self.zstr, b1, sig8)
         
@@ -527,7 +537,7 @@ class JointLikelihood(Likelihood):
         return(tt)
         #
     
-    def bao_predict(self, bao_sample_name,zfid, thetas=None):
+    def bao_predict(self, bao_sample_name,zfid):
         
         pp   = self.provider
         zstr = "%.2f" %(zfid)
@@ -536,19 +546,19 @@ class JointLikelihood(Likelihood):
         B1   = pp.get_param('B1_' + bao_sample_name)
         F   = pp.get_param('F_' + bao_sample_name)
         
-        # Analytically marginalize linear parmaeters so these are obtained differently
-        if thetas is None:
-            Mpoly = [self.linear_param_means[param_name + '_' + bao_sample_name] for param_name in self.mpoly_names]
-            if len(self.bao_ells)>1:
-                Qpoly = [self.linear_param_means[param_name + '_' + bao_sample_name] for param_name in self.qpoly_names]
-                Qspl = [self.linear_param_means[param_name + '_' + bao_sample_name] for param_name in self.qspl_names]
-        else:
-            # Mpoly = [thetas[param_name + '_' + bao_sample_name] for param_name in ['M0','M1',]]
-            # Qpoly = [thetas[param_name + '_' + bao_sample_name] for param_name in ['Q0','Q1',]]
-            Mpoly = [thetas[param_name + '_' + bao_sample_name] for param_name in self.mpoly_names]
-            if len(self.bao_ells)>1:
-                Qpoly = [thetas[param_name + '_' + bao_sample_name] for param_name in self.qpoly_names]
-                Qspl = [thetas[param_name + '_' + bao_sample_name] for param_name in self.qspl_names]
+        # # Analytically marginalize linear parmaeters so these are obtained differently
+        # if thetas is None:
+        #     Mpoly = [self.linear_param_means[param_name + '_' + bao_sample_name] for param_name in self.mpoly_names]
+        #     if len(self.bao_ells)>1:
+        #         Qpoly = [self.linear_param_means[param_name + '_' + bao_sample_name] for param_name in self.qpoly_names]
+        #         Qspl = [self.linear_param_means[param_name + '_' + bao_sample_name] for param_name in self.qspl_names]
+        # else:
+        #     # Mpoly = [thetas[param_name + '_' + bao_sample_name] for param_name in ['M0','M1',]]
+        #     # Qpoly = [thetas[param_name + '_' + bao_sample_name] for param_name in ['Q0','Q1',]]
+        #     Mpoly = [thetas[param_name + '_' + bao_sample_name] for param_name in self.mpoly_names]
+        #     if len(self.bao_ells)>1:
+        #         Qpoly = [thetas[param_name + '_' + bao_sample_name] for param_name in self.qpoly_names]
+        #         Qspl = [thetas[param_name + '_' + bao_sample_name] for param_name in self.qspl_names]
         #M0, M1, M2 = [pp.get_param(param_name + '_' + bao_sample_name) for param_name in ['M0','M1','M2']]
         #Q0, Q1, Q2 = [pp.get_param(param_name + '_' + bao_sample_name) for param_name in ['Q0','Q1','Q2']]
         
@@ -561,10 +571,10 @@ class JointLikelihood(Likelihood):
         xi2t = xi2table[:,0] + B1*xi2table[:,1] + F*xi2table[:,2] \
              + B1**2 * xi2table[:,3] + F**2 * xi2table[:,4] + B1*F*xi2table[:,5]
         
-        xi0t += Mpoly[0] + Mpoly[1]*(rvec*self.fs_kmins[0]/(2*pi))**2  #polyval(rvec*np.pi/, Mpoly)
-        if len(self.bao_ells)>1:
-            xi2t += Qpoly[0] + Qpoly[1]*(rvec*self.fs_kmins[0]/(2*pi))**2
-            xi2t += self.delta**3*(Qspl[0]*self.B20 + Qspl[1]*self.B21)
+        # xi0t += Mpoly[0] + Mpoly[1]*(rvec*self.fs_kmins[0]/(2*pi))**2  #polyval(rvec*np.pi/, Mpoly)
+        # if len(self.bao_ells)>1:
+        #     xi2t += Qpoly[0] + Qpoly[1]*(rvec*self.fs_kmins[0]/(2*pi))**2
+        #     xi2t += self.delta**3*(Qspl[0]*self.B20 + Qspl[1]*self.B21)
         
         
         return np.array([rvec,xi0t,xi2t]).T
@@ -588,8 +598,8 @@ class JointLikelihood(Likelihood):
         thy = np.concatenate([thy,Spline(tt[:,0],tt[:,3],ext=3)(kv)])
         
         if np.any(np.isnan(thy)) or np.max(thy) > 1e8:
-            hub = self.provider.get_param('H0_emu') / 100.
-            sig8 = self.provider.get_param('sig8')
+            hub = self.provider.get_param('H0') / 100.
+            sig8 = self.provider.get_param('sigma8')
             ns = self.provider.get_param('ns')
             Om = self.provider.get_param('omegam')
             print("NaN's encountered in PREDICT. Parameter values are: ns={},H0={},Om={},sig8={}".format(ns,hub,Om,sig8))
@@ -634,10 +644,24 @@ class JointLikelihood(Likelihood):
     
         return convolved_model
     
-    def bao_observe(self, tt, bao_sample_name, matrix=True):
+    def bao_observe(self, tt, bao_sample_name, matrix=True,thetas=None):
         '''
         Bin the BAO results... probabaly should eventually use a matrix.
         '''
+
+        # Analytically marginalize linear parmaeters so these are obtained differently
+        if thetas is None:
+            Mpoly = [self.linear_param_means[param_name + '_' + bao_sample_name] for param_name in self.mpoly_names]
+            if len(self.bao_ells)>1:
+                Qpoly = [self.linear_param_means[param_name + '_' + bao_sample_name] for param_name in self.qpoly_names]
+                Qspl = [self.linear_param_means[param_name + '_' + bao_sample_name] for param_name in self.qspl_names]
+        else:
+            # Mpoly = [thetas[param_name + '_' + bao_sample_name] for param_name in ['M0','M1',]]
+            # Qpoly = [thetas[param_name + '_' + bao_sample_name] for param_name in ['Q0','Q1',]]
+            Mpoly = [thetas[param_name + '_' + bao_sample_name] for param_name in self.mpoly_names]
+            if len(self.bao_ells)>1:
+                Qpoly = [thetas[param_name + '_' + bao_sample_name] for param_name in self.qpoly_names]
+                Qspl = [thetas[param_name + '_' + bao_sample_name] for param_name in self.qspl_names]
         
         rdat = self.rdats[bao_sample_name]
         
@@ -668,7 +692,7 @@ class JointLikelihood(Likelihood):
 
                         ss = np.linspace(kl, kr, 100)
                         p     = thy(ss)
-                        tmp[i]= np.trapz(ss**2*p,x=ss)*3/(kr**3-kl**3)
+                        tmp[i]= np.trapezoid(ss**2*p,x=ss)*3/(kr**3-kl**3)
         
                     bin_mat[:,ii] = tmp
                 
@@ -701,7 +725,10 @@ class JointLikelihood(Likelihood):
                 #tmp4[i]= np.trapz(ss**2*p4,x=ss)*3/(kr**3-kl**3)
             
         #self.xith[bao_sample_name] = np.concatenate((tmp0,tmp2))
+        tmp0 += Mpoly[0] + Mpoly[1]*(rdat*self.fs_kmins[0]/(2*pi))**2
         if len(self.bao_ells) == 2:
+            tmp2 += Qpoly[0] + Qpoly[1]*(rdat*self.fs_kmins[0]/(2*pi))**2
+            tmp2 += self.delta**3*(Qspl[0]*self.B20[bao_sample_name] + Qspl[1]*self.B21[bao_sample_name])
             return np.concatenate((tmp0,tmp2))
         else:
             return tmp0
@@ -712,16 +739,13 @@ class Taylor_pk_theory_zs(Theory):
     A class to return a set of derivatives for the Taylor series of Pkell.
     """
     zfids: list
-    pk_filenames: list
-    xi_filenames: list
     Rsmooth: list
     s8_filenames: list
     # plin_filenames: list
     basedir: str
-    omega_nu: float
+    # omega_nu: float
     bao_sample_names: list
-    # derive_AP: bool
-    # AP_z: float
+    fid_dists: list
     
     def initialize(self):
         """Sets up the class by loading the derivative matrices."""
@@ -731,7 +755,7 @@ class Taylor_pk_theory_zs(Theory):
         # First Load Sigma8 class:
         # self.compute_sigma8 = Compute_Sigma8_wCDM(self.basedir + self.s8_filename)
         
-        self.compute_theory = direct_fit_theory(zs = self.zfids)
+        self.compute_theory = direct_fit_theory(zs = self.zfids, fid_dists = self.fid_dists)
         
     
     def get_requirements(self):
@@ -743,27 +767,30 @@ class Taylor_pk_theory_zs(Theory):
         # only depend on cosmological things (not biases).
         #
         req = {\
-               'ns': None,\
+            #    'ns': None,\
                'omega_b': None,\
                'omega_cdm': None,\
             #    'omegam': None,\
                # 'H0': None,\
-               '100*theta_s': None,\
-               'Omega_k': None,\
-               'tau': None,\
-               'w': None,\
-               'wa': None,\
-               'logA': None,\
+            #    'theta_s_100': None,\
+            #    'Omega_k': None,\
+            #    'tau': None,\
+            #    'w': None,\
+            #    'wa': None,\
+            #    'logA': None,\
                'm_ncdm': None,\
-               'Pk_grid': {'k_max': 30, 'z':self.zfids,\
+               'Pk_interpolator': {'k_max': 30, 'z':zg,\
                                    'nonlinear': False,\
                                    'vars_pairs': [['delta_nonu','delta_nonu']]},\
+            #    'Pk_grid': {'k_max': 30, 'z':zg,\
+            #                        'nonlinear': False,\
+            #                        'vars_pairs': [['delta_nonu','delta_nonu']]},\
                'Hubble':   {'z': [0.0,] + self.zfids},\
                'sigma8_z': {'z': [0.0,] + self.zfids},\
-               # 'fsigma8':  {'z': [0.0,] + self.zfids},\
+               'fsigma8':  {'z': [0.0,] + self.zfids},\
                'comoving_radial_distance': {'z': [0,] + self.zfids},\
-               'scale_independent_growth_factor': {'z': [0,] + self.zfids},\
-               'scale_independent_growth_factor_f': {'z': [0,] + self.zfids},\
+            #    'scale_independent_growth_factor': {'z': [0,] + self.zfids},\
+            #    'scale_independent_growth_factor_f': {'z': [0,] + self.zfids},\
                'rs_drag': None,\
                'h': None,\
                 }
@@ -783,52 +810,56 @@ class Taylor_pk_theory_zs(Theory):
         return ['taylor_pk_ell_mod','taylor_xi_ell_mod','zPars']
     
     # def get_can_provide_params(self):
-    #     return ['sig8','H0_emu']
+    #     # return ['sig8','H0']
+    #     return ['sig8']
     
     def calculate(self, state, want_derived=True, **params_values_dict):
         """
         Just load up the derivatives and things.
         """
         pp = self.provider
-        
-        w0 = pp.get_param('w')
-        wa = pp.get_param('wa')
-        ns = pp.get_param('ns')
-        theta_star = pp.get_param('100*theta_s')
-        # ns = 0.96
-        # H0 = pp.get_param('H0')
-        # hub =  H0/ 100.
-        logA = pp.get_param('logA')
-        As = 1e-10 * np.exp(logA)
+
+        # print(pp)
+        # w0 = pp.get_param('w')
+        # wa = pp.get_param('wa')
+        # ns = pp.get_param('ns')
+
+        # theta_star = pp.get_param('theta_s_100')
+        # # ns = 0.96
+        # # H0 = pp.get_param('H0')/
+        # # hub =  H0/ 100.
+        # logA = pp.get_param('logA')
+        # As = 1e-10 * np.exp(logA)
+        h = pp.get_param('h')
         omega_b = pp.get_param('omega_b')
         omega_cdm = pp.get_param('omega_cdm')
-
-        OmM = (omega_cdm + omega_b + Mnu/93.14)/hub**2
-        
         Mnu = pp.get_param('m_ncdm')
-        # cosmopars = [w0,wa, OmM, logA]
-        
-        h = pp.get_h()
-        self.compute_theory.rd = rs_drag*h # want this in Mpc/h units
-        Pk_grid = pp.get_Pk_grid()
-        
-        Hubble = pp.get_Hubble()/h
-        chizs = pp.get_comoving_radial_distance()/h
-        
-        fzs = pp.get_scale_independent_growth_factor_f()
-        Dzs = pp.get_scale_independent_growth_factor()
-        sigma8_zs = pp.get_sigma8_z()
-        ki = Pk_grid['k']
-        pi_0 = Pk_grid['delta_nonu:delta_nonu'][:,0]
+        OmM = (omega_cdm + omega_b + Mnu/93.14)/h**2
 
-        
+        ki   = np.logspace(-3.0,1.0,200)
+        pi_interp   = pp.get_Pk_interpolator(nonlinear=False,var_pair=['delta_nonu','delta_nonu'])
+        pi_0   = pi_interp.P(0.0,ki*h)*h**3
+        # print(k_arr,z_arr)
+        # print(pi.shape)
+        # fsigma8s = pp.get_fsigma8()
+
+        speed_of_light = 2.99792458e5
+        # Hubbles = pp.get_Hubble()
+        # h = Hubbles[0]/100.
+        # print('h = ',h)
+        # chizs = pp.get_comoving_radial_distance()/h
+
+        # fzs = pp.scale_independent_growth_factor_f()
+        # Dzs = pp.get_scale_independent_growth_factor()
+        sigma8_0 = pp.get_sigma8_z(0.0)[0]
+        rs_drag = pp.get_param('rs_drag')
+
+        qBAO = rs_drag * h
+
+
         # Initialize EPT
-        self.compute_theory.setup_REPT(ki,pi_0,rs_drag, h)
-
-        #For NN emulator:
-        # params = np.array([omega_b,omega_cdm,-1.0,ns, As,H0,np.log10(Mnu),0])[self.nnemu.param_order] 
-        # sig80 = self.nnemu.sigma8z_emu(params)[0]
-        ptables = {}
+        self.compute_theory.setup_REPT(ki,pi_0, qBAO)
+        ptables = {'PT_model': 'EPT'} #Can include LPT once fast version is ready
         xitables = {}
         zPars = {}
             
@@ -837,34 +868,30 @@ class Taylor_pk_theory_zs(Theory):
         for ii,zfid in enumerate(self.zfids):
             zstr = "%.2f" %(zfid)
 
-            Hzfid, chizfid = self.compute_theory.fid_dists[zstr]
+            Hz = pp.get_Hubble(zfid)[0]/h #pkclass.Hubble(zfid) * speed_of_light / h # this H(z) in units km/s/(Mpc/h) = 100 * E(z)
+            chiz = pp.get_comoving_radial_distance(zfid)[0]*h #pkclass.angular_distance(zfid) * (1.+zfid) * h # this is the comoving radius in units of Mpc/h 
+            # fz = pkclass.scale_independent_growth_factor_f(zfid)
+            # Dz = pkclass.scale_independent_growth_factor(zfid)
+            sig8z = pp.get_sigma8_z(zfid)[0]
+            fsigma8 = pp.get_fsigma8(zfid)[0]
+            fz = fsigma8/sig8z
+            Dz = sig8z/sigma8_0
 
-            Hz = Hubble[ii+1]
-            chiz = chizs[ii+1]
-            fz = fzs[ii+1]
-            Dz = Dzs[ii+1]
-            sig8z = sigma8_zs[ii+1]
-
-            apar, aperp = Hzfid / Hz, chiz / chizfid
-            self.compute_theory.qpar[zstr],self.compute_theory.qperp[zstr] = apar, aperp
-            self.compute_theory.fz[zstr] = fz
-            self.compute_theory.Dz[zstr] = Dz
-            
-            
-            pi_z = Pk_grid['delta_nonu:delta_nonu'][:,ii+1]
-            kv,p0ktable,p2ktable,p4ktable = self.compute_theory.compute_pell_tables_EPT(z,ki,pi_z,h,Hz,chiz)
+            pi_z = pi_interp.P(zfid,ki*h)*h**3
+            kv,p0ktable,p2ktable,p4ktable = self.compute_theory.compute_pell_tables_EPT(zfid,ki,pi_z,Hz,chiz,fz,Dz)
             
             ptables[zstr] = (kv, p0ktable, p2ktable, p4ktable)
             
             
             sigmas = (pp.get_param('Sigpar_' +  self.bao_sample_names[ii]),\
-                     pp.get_param('Sigperp_' +  self.bao_sample_names[ii]),\
-                     pp.get_param('Sigs_' +  self.bao_sample_names[ii]))
+                        pp.get_param('Sigperp_' +  self.bao_sample_names[ii]),\
+                        pp.get_param('Sigs_' +  self.bao_sample_names[ii]))
             
-            rv, xi0table, xi2table, Dz, fz = self.compute_theory.compute_xiell_tables(zfid,ki,pi_z,rs_drag,h,Hz,chiz,  R=self.Rsmooth[ii], rmin=50, rmax=160, dr=0.5, sigs = sigmas)
+            rv, xi0table, xi2table = self.compute_theory.compute_xiell_tables(zfid,ki,pi_z,Hz,chiz,qBAO,fz,  R=self.Rsmooth[ii], rmin=50, rmax=160, dr=0.1, sigs = sigmas)
             
             xitables[zstr] = (rv, xi0table, xi2table)
-            
+            qpar,qperp = self.compute_theory.qpar[zstr], self.compute_theory.qperp[zstr]
+            # print(qpar,qperp,chiz,self.fid_dists[ii][1])
             zPars[zstr] = [sig8z,fz]
             zPars[zstr] += [qpar,qperp]
             
@@ -873,7 +900,307 @@ class Taylor_pk_theory_zs(Theory):
             
         #state['sigma8'] = sig8
         # H0_emu = compute_zpars.compute_H0(cosmopars,order = 5)*100 
-        state['derived'] = {'sig8': sigma8_zs[0],'H0': h*100.,'Omegam': OmM}
+        # state['derived'] = {'sig8': sigma8_zs[0],'H0': h*100.,'Omegam': OmM}
+        # state['derived'] = {'sigma8': sigma8_0,'omegam': OmM}
         state['zPars'] = zPars
         state['taylor_pk_ell_mod'] = ptables
+        state['taylor_xi_ell_mod'] = xitables
+
+
+class direct_pk_theory_zs(Theory):
+    """
+    A class to return a set of derivatives for the Taylor series of Pkell.
+    """
+    zfids: list
+    fid_dists: list
+    
+    def initialize(self):
+        """Sets up the class"""
+        
+        self.compute_theory = direct_fit_theory(zs = self.zfids, fid_dists = self.fid_dists)
+        
+    
+    def get_requirements(self):
+        """What we need in order to provide P_ell."""
+        zmax = max(self.zfids)
+        zg  = np.linspace(0,zmax,100,endpoint=True)
+        req = {\
+               'omega_b': None,\
+               'omega_cdm': None,\
+               'm_ncdm': None,\
+               'Pk_interpolator': {'k_max': 30, 'z':zg,\
+                                   'nonlinear': False,\
+                                   'vars_pairs': [['delta_nonu','delta_nonu']]},\
+               'Hubble':   {'z': [0.0,] + self.zfids},\
+               'sigma8_z': {'z': [0.0,] + self.zfids},\
+               'fsigma8':  {'z': [0.0,] + self.zfids},\
+               'comoving_radial_distance': {'z': [0,] + self.zfids},\
+               'rs_drag': None,\
+               'h': None,\
+                }
+        
+        
+        return(req)
+    def get_can_provide(self):
+        """What do we provide: a Taylor series class for pkells."""
+        return ['taylor_pk_ell_mod','zPars']
+    
+    def calculate(self, state, want_derived=True, **params_values_dict):
+        """
+        Just load up the derivatives and things.
+        """
+        pp = self.provider
+        h = pp.get_param('h')
+        omega_b = pp.get_param('omega_b')
+        omega_cdm = pp.get_param('omega_cdm')
+        Mnu = pp.get_param('m_ncdm')
+        OmM = (omega_cdm + omega_b + Mnu/93.14)/h**2
+
+        ki   = np.logspace(-3.0,1.0,200)
+        pi_interp   = pp.get_Pk_interpolator(nonlinear=False,var_pair=['delta_nonu','delta_nonu'])
+        pi_0   = pi_interp.P(0.0,ki*h)*h**3
+
+        speed_of_light = 2.99792458e5
+        sigma8_0 = pp.get_sigma8_z(0.0)[0]
+        rs_drag = pp.get_param('rs_drag')
+
+        qBAO = rs_drag * h
+
+
+        # Initialize EPT
+        self.compute_theory.setup_REPT(ki,pi_0, qBAO)
+        ptables = {'PT_model': 'EPT'} #Can include LPT once fast version is ready
+        xitables = {}
+        zPars = {}
+            
+        # ll=0
+        # for zfid,R in zip(self.zfids,self.Rsmooth):
+        for ii,zfid in enumerate(self.zfids):
+            zstr = "%.2f" %(zfid)
+
+            Hz = pp.get_Hubble(zfid)[0]/h #pkclass.Hubble(zfid) * speed_of_light / h # this H(z) in units km/s/(Mpc/h) = 100 * E(z)
+            chiz = pp.get_comoving_radial_distance(zfid)[0]*h #pkclass.angular_distance(zfid) * (1.+zfid) * h # this is the comoving radius in units of Mpc/h 
+            sig8z = pp.get_sigma8_z(zfid)[0]
+            fsigma8 = pp.get_fsigma8(zfid)[0]
+            fz = fsigma8/sig8z
+            Dz = sig8z/sigma8_0
+
+            pi_z = pi_interp.P(zfid,ki*h)*h**3
+            kv,p0ktable,p2ktable,p4ktable = self.compute_theory.compute_pell_tables_EPT(zfid,ki,pi_z,Hz,chiz,fz,Dz)
+            qpar,qperp = self.compute_theory.qpar[zstr], self.compute_theory.qperp[zstr]
+            ptables[zstr] = (kv, p0ktable, p2ktable, p4ktable)
+
+            zPars[zstr] = [sig8z,fz]
+            zPars[zstr] += [qpar,qperp]
+            
+ 
+        state['zPars'] = zPars
+        state['taylor_pk_ell_mod'] = ptables
+
+class direct_Xi_theory_zs(Theory):
+    """
+    A class to return a set of derivatives for the Taylor series of Pkell.
+    """
+    zfids: list
+    Rsmooth: list
+    fid_dists: list
+    bao_sample_names: list
+    
+    def initialize(self):
+        """Sets up the class."""
+        
+        self.compute_theory = direct_fit_theory(zs = self.zfids, fid_dists = self.fid_dists)
+        
+    
+    def get_requirements(self):
+        """What we need in order to provide P_ell."""
+        zmax = max(self.zfids)
+        zg  = np.linspace(0,zmax,100,endpoint=True)
+        # Don't need sigma8_z, fsigma8 or radial distance
+        # here, but want them up in likelihood and they
+        # only depend on cosmological things (not biases).
+        #
+        req = {'Pk_interpolator': {'k_max': 30, 'z':zg,\
+                                   'nonlinear': False,\
+                                   'vars_pairs': [['delta_nonu','delta_nonu']]},\
+            #    'Pk_grid': {'k_max': 30, 'z':zg,\
+            #                        'nonlinear': False,\
+            #                        'vars_pairs': [['delta_nonu','delta_nonu']]},\
+               'Hubble':   {'z': [0.0,] + self.zfids},\
+               'sigma8_z': {'z': [0.0,] + self.zfids},\
+               'fsigma8':  {'z': [0.0,] + self.zfids},\
+               'comoving_radial_distance': {'z': [0,] + self.zfids},\
+               'rs_drag': None,\
+               'h': None,\
+                }
+              
+        
+        for bao_sample_name in self.bao_sample_names:
+            req_bao = {\
+                   'Sigpar_' +  bao_sample_name: None,\
+                   'Sigperp_' +  bao_sample_name: None,\
+                   'Sigs_' +  bao_sample_name: None,\
+                    }
+            req = {**req, **req_bao}
+        
+        return(req)
+    def get_can_provide(self):
+        """What do we provide: a Taylor series class for pkells."""
+        return ['taylor_xi_ell_mod']
+    
+    def calculate(self, state, want_derived=True, **params_values_dict):
+        """
+        Just load up the derivatives and things.
+        """
+        pp = self.provider
+        h = pp.get_param('h')
+
+        ki   = np.logspace(-3.0,1.0,200)
+        pi_interp   = pp.get_Pk_interpolator(nonlinear=False,var_pair=['delta_nonu','delta_nonu'])
+
+        speed_of_light = 2.99792458e5
+        sigma8_0 = pp.get_sigma8_z(0.0)[0]
+        rs_drag = pp.get_param('rs_drag')
+
+        qBAO = rs_drag * h
+
+        xitables = {}
+        for ii,zfid in enumerate(self.zfids):
+            zstr = "%.2f" %(zfid)
+
+            Hz = pp.get_Hubble(zfid)[0]/h #pkclass.Hubble(zfid) * speed_of_light / h # this H(z) in units km/s/(Mpc/h) = 100 * E(z)
+            chiz = pp.get_comoving_radial_distance(zfid)[0]*h #pkclass.angular_distance(zfid) * (1.+zfid) * h # this is the comoving radius in units of Mpc/h 
+            sig8z = pp.get_sigma8_z(zfid)[0]
+            fsigma8 = pp.get_fsigma8(zfid)[0]
+            fz = fsigma8/sig8z
+            Dz = sig8z/sigma8_0
+
+            pi_z = pi_interp.P(zfid,ki*h)*h**3
+            
+            
+            sigmas = (pp.get_param('Sigpar_' +  self.bao_sample_names[ii]),\
+                        pp.get_param('Sigperp_' +  self.bao_sample_names[ii]),\
+                        pp.get_param('Sigs_' +  self.bao_sample_names[ii]))
+            
+            rv, xi0table, xi2table = self.compute_theory.compute_xiell_tables(zfid,ki,pi_z,Hz,chiz,qBAO,fz,  R=self.Rsmooth[ii], rmin=50, rmax=160, dr=0.1, sigs = sigmas)
+            
+            xitables[zstr] = (rv, xi0table, xi2table)
+        state['taylor_xi_ell_mod'] = xitables
+
+class direct_Xi_theory_zs_jax(Theory):
+    
+    """
+    A class to return a set of derivatives for the Taylor series of Pkell.
+    """
+    
+    zfids: list
+    Rsmooth: list
+    fid_dists: list
+    bao_sample_names: list
+    
+    def initialize(self):
+        """Sets up the class."""
+        import jax
+        import jax.numpy as jnp
+        from compute_xiell_tables_recsym_jax import compute_xiell_tables
+        from cosmoprimo import PowerSpectrumInterpolator1D
+        from cosmoprimo import PowerSpectrumBAOFilter
+
+        self.PowerSpectrumInterpolator1D = PowerSpectrumInterpolator1D
+        self.PowerSpectrumBAOFilter = PowerSpectrumBAOFilter
+        self.compute_xiell_tables = compute_xiell_tables
+        
+        
+        def Pint_func(ki,pi):
+            pint = PowerSpectrumInterpolator1D(ki,pi,extrap_kmin=1e-5, extrap_kmax=29.)
+            return pint
+        
+        self.Pinterpolate = jax.jit(Pint_func)
+        self.rout = np.arange(50, 160, 0.1)
+        
+    
+    def get_requirements(self):
+        """What we need in order to provide P_ell."""
+        zmax = max(self.zfids)
+        zg  = np.linspace(0,zmax,100,endpoint=True)
+        # Don't need sigma8_z, fsigma8 or radial distance
+        # here, but want them up in likelihood and they
+        # only depend on cosmological things (not biases).
+        #
+        req = {'Pk_interpolator': {'k_max': 30, 'z':zg,\
+                                   'nonlinear': False,\
+                                   'vars_pairs': [['delta_nonu','delta_nonu']]},\
+            #    'Pk_grid': {'k_max': 30, 'z':zg,\
+            #                        'nonlinear': False,\
+            #                        'vars_pairs': [['delta_nonu','delta_nonu']]},\
+               'Hubble':   {'z': [0.0,] + self.zfids},\
+               'sigma8_z': {'z': [0.0,] + self.zfids},\
+               'fsigma8':  {'z': [0.0,] + self.zfids},\
+               'comoving_radial_distance': {'z': [0,] + self.zfids},\
+               'rs_drag': None,\
+               'h': None,\
+                }
+              
+        
+        for bao_sample_name in self.bao_sample_names:
+            req_bao = {\
+                   'Sigpar_' +  bao_sample_name: None,\
+                   'Sigperp_' +  bao_sample_name: None,\
+                   'Sigs_' +  bao_sample_name: None,\
+                    }
+            req = {**req, **req_bao}
+        
+        return(req)
+    def get_can_provide(self):
+        """What do we provide: a Taylor series class for pkells."""
+        return ['taylor_xi_ell_mod']
+    
+    def calculate(self, state, want_derived=True, **params_values_dict):
+        """
+        Just load up the derivatives and things.
+        """
+        pp = self.provider
+        h = pp.get_param('h')
+
+        ki   = np.logspace(-3.0,1.0,200)
+        pi_interp   = pp.get_Pk_interpolator(nonlinear=False,var_pair=['delta_nonu','delta_nonu'])
+
+        speed_of_light = 2.99792458e5
+        sigma8_0 = pp.get_sigma8_z(0.0)[0]
+        rs_drag = pp.get_param('rs_drag')
+
+        qBAO = rs_drag * h
+
+        xitables = {}
+        for ii,zfid in enumerate(self.zfids):
+            # print(ii,zfid)
+            zstr = "%.2f" %(zfid)
+
+            Hz = pp.get_Hubble(zfid)[0]/h #pkclass.Hubble(zfid) * speed_of_light / h # this H(z) in units km/s/(Mpc/h) = 100 * E(z)
+            chiz = pp.get_comoving_radial_distance(zfid)[0]*h #pkclass.angular_distance(zfid) * (1.+zfid) * h # this is the comoving radius in units of Mpc/h 
+            sig8z = pp.get_sigma8_z(zfid)[0]
+            fsigma8 = pp.get_fsigma8(zfid)[0]
+            fz = fsigma8/sig8z
+            Dz = sig8z/sigma8_0
+
+            Hzfid, chizfid = self.fid_dists[ii]
+            qpar, qperp = Hzfid / Hz, chiz / chizfid
+
+            pi_z = pi_interp.P(zfid,ki*h)*h**3
+            
+            
+            Sigpar = pp.get_param('Sigpar_' +  self.bao_sample_names[ii])
+            Sigperp = pp.get_param('Sigperp_' +  self.bao_sample_names[ii])
+            Sigs    =  pp.get_param('Sigs_' +  self.bao_sample_names[ii])
+            bao_pars = [qpar,qperp,Sigpar,Sigperp,Sigs]
+
+        
+            pint = self.Pinterpolate(ki,pi_z) 
+            filt = self.PowerSpectrumBAOFilter(pint)
+            
+            rv,xi0table, xi2table = self.compute_xiell_tables(pars=bao_pars,ki=filt.k,pi=filt.pk,pnw=filt.pknow,\
+                                                         qbao=qBAO,f0 = fz, rout = self.rout,z=zfid,\
+                                                         R=self.Rsmooth[ii])
+            
+            xitables[zstr] = (np.asarray(rv), np.asarray(xi0table), np.asarray(xi2table))
         state['taylor_xi_ell_mod'] = xitables

@@ -1,0 +1,11 @@
+m_ncdm:
+    prior:
+      dist: uniform
+      min: 0.0
+      max: 2.0
+    ref:
+      dist: norm
+      loc: 0.06
+      scale: 0.01
+    # value: 0.06
+    latex: M_{\nu}

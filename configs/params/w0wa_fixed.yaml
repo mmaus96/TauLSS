@@ -1,0 +1,6 @@
+w:
+    value: -1.0
+    latex: w_0
+wa:
+    value: 0.0
+    latex: w_{a}

@@ -52,8 +52,8 @@ theory:
 
 likelihood:
   # planck_NPIPE_highl_CamSpec.TTTEEE:
-  # planck_2018_lowl.TT: null
-  # planck_2018_lowl.EE: null
+  planck_2018_lowl.TT: null
+  planck_2018_lowl.EE: null
   planck_NPIPE_highl_CamSpec.TTTEEE: null
   act_dr6_lenslike.ACTDR6LensLike:
     stop_at_error: true
@@ -1038,7 +1038,7 @@ sampler:
     #   - [ 6, [bsig8_BGS,b2sig8_BGS,bssig8_BGS,bsig8_LRG1,b2sig8_LRG1,bssig8_LRG1,bsig8_LRG2,b2sig8_LRG2,bssig8_LRG2,bsig8_LRG3,b2sig8_LRG3,bssig8_LRG3,bsig8_ELG,b2sig8_ELG,bssig8_ELG,bsig8_QSO,b2sig8_QSO,bssig8_QSO]]
     #   - [6,[B1_BGS,F_BGS,B1_LRG1,F_LRG1,B1_LRG2,F_LRG2,B1_LRG3,F_LRG3,B1_ELG,F_ELG,B1_QSO,F_QSO]]
     
-output: chains/cam spec_kk_RSDBAO/chain
+output: chains/test/chain
 # debug: True
 # debug_file: chains/w0wa/base_union3/class/chain
 timing: True

@@ -1,0 +1,8 @@
+classy:
+    extra_args:
+      output: "mPk"
+      P_k_max_h/Mpc: 30
+      N_ncdm: 1
+      N_ur: 2.0328
+      Omega_Lambda: 0
+    stop_at_error: False
