@@ -1,8 +1,29 @@
+# classy:
+#     extra_args:
+#       output: "mPk"
+#       P_k_max_h/Mpc: 30
+#       N_ncdm: 1
+#       N_ur: 2.0328
+#       Omega_Lambda: 0
+#     stop_at_error: False
+
 classy:
     extra_args:
       output: "mPk"
+      # non linear: 'none'             
       P_k_max_h/Mpc: 30
       N_ncdm: 1
       N_ur: 2.0328
       Omega_Lambda: 0
     stop_at_error: False
+    input_params:
+    - As
+    - omega_cdm
+    - w
+    - wa
+    - ns
+    - omega_b
+    - tau
+    # - theta_s_100
+    - H0
+    - m_ncdm
