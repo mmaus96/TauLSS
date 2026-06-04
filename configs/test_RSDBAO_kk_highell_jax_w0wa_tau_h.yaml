@@ -1,6 +1,8 @@
 theory: !defaults [./likelihoods_theories/class,./likelihoods_theories/RSD, ./likelihoods_theories/BAO_jax]
 
 likelihood: !defaults 
+- ./likelihoods_theories/act_dr6_lenslike
+- ./likelihoods_theories/planck_NPIPE_highl_CamSpec.TTTEEE
 - ./likelihoods_theories/lik_RSDBAO_BGS
 - ./likelihoods_theories/lik_RSDBAO_LRG1
 - ./likelihoods_theories/lik_RSDBAO_LRG2
@@ -9,7 +11,7 @@ likelihood: !defaults
 - ./likelihoods_theories/lik_RSDBAO_QSO
 
 params: !defaults 
-- ./params/cosmo_base_thetastar
+- ./params/cosmo_base_h
 - ./params/w0wa_free
 - ./params/tau_free
 - ./params/Mnu_0.06
@@ -22,4 +24,4 @@ params: !defaults
 
 sampler: !defaults [./likelihoods_theories/mcmc]
 timing: True
-output: ./chains/test_RSDBAO_jax_w0wa_tau_thetastar/chain
+output: ./chains/test_RSDBAO_kk_highell_jax_w0wa_tau_h/chain
