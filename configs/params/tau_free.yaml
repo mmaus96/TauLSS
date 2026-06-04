@@ -1,7 +1,10 @@
 tau:
-    prior:
-      dist: norm
-      loc: 0.0544
-      scale: 0.006
-    proposal: 0.006
-    latex: \tau_\mathrm{reio}
+  prior:
+    min: 0.02
+    max: 0.20
+  ref: 
+    dist: norm
+    loc: 0.06
+    scale: 0.006
+  proposal: 0.006
+  latex: \tau_\mathrm{reio}
