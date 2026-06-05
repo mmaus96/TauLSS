@@ -1,6 +1,6 @@
 import numpy as np
 
-from classy import Class
+# from classy import Class
 from compute_xiell_tables_recsym import compute_xiells, compute_bao_pkmu, kint,sphr
 # from linear_theory import f_of_a
 from velocileptors.LPT.lpt_rsd_fftw import LPT_RSD
